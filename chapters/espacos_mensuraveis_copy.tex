@@ -1,0 +1,162 @@
+
+
+\begin{definicao} \label{def1.1}
+    
+    Uma \textbf{álgebra} de subconjuntos de $X$ é uma família $\mathcal{B}$ de subconjuntos de $X$
+    que é fechada para as operações elementares de conjuntos, ou seja: 
+    
+    \begin{enumerate}[label=(\roman*)]
+        \item   Se $A \in \mathcal{B}$, então $A^c \in \mathcal{B}$
+        \item Se $A, B \in \mathcal{B}$, então $A \cup B \in \mathcal{B}$
+    \end{enumerate} 
+
+    Note que como $ A \cap B = (A^c \cup B^c)^c $ e $A \setminus B = A \cap B^c$ para 
+    quaisquer $A,B \in \mathcal{B}$, então tais operações de conjuntos também são fechadas 
+    em $\mathcal{B}$, além disso como $\emptyset = X \cap X^c $ e $X = A \cup A^c$, nós também temos 
+    que $\emptyset \in \mathcal{B}  $ e $ X \in \mathcal{B}$ .  
+    Note também que, por associatividade, a união e intercecção de qualquer
+    número finito de elementos de $\mathcal{B}$ está em $\mathcal{B}$.                                
+
+\end{definicao}
+
+\begin{definicao} \label{def1.2}
+    
+    Uma \textbf{$\sigma$-álgebra} é uma álgebra de subconjuntos de $X$ que também é fechada para a 
+    união enumerável de subconjutos de $\mathcal{B}$, ou seja:
+
+    \begin{enumerate}
+        \item[(iii)] Se $ A_j \in \mathcal{B}, j = \{ 1,2,... \}$, então $ \bigcup\limits _{j=1} ^{\infty} A_j \in 
+        \mathcal{B} $ 
+    \end{enumerate}
+
+    Note que como \( \bigcap _{j=1} ^{\infty} A_j = \big( \bigcup _{j=1} ^{\infty} A_j ^c \big) ^c  \), nós também temos que as $\sigma$-álgebras são fechadas 
+    para as intersecções enumeráveis.
+
+\end{definicao}
+
+Abaixo seguem alguns exemplos de \sig .
+
+\begin{exemplo} \label{ex1.1}
+    
+    Seja \(X=\{ a,b,c,d \} \),  $ \mathcal{B}_0 = \{ \emptyset, \{a,b\},\{c,d\}, \{a,b,c,d\} \}$
+    é uma $\sigma$-álgebra, da mesma forma que $\mathcal{B}_1 = \{ \emptyset, X \} $ e 
+    $\mathcal{B}_2 = 2^X $ também são $\sigma$-álgebras, ainda mais, $\mathcal{B}_1$ e 
+    $\mathcal{B}_2$ são $\sigma$-álgebras para qualquer conjunto $X$, sendo $\{ \emptyset, X  \}$
+    a menor e $2^X$ a maior $\sigma$-álgebra de qualquer conjunto $X$. 
+\end{exemplo} 
+
+\begin{exemplo} \label{ex1.2}
+    Seja $X$ um conjunto não enumerável, então
+    \[ 
+    \mathcal{B} = \{ A \in X : A \ \text{é enumerável ou } A^c \ \text{é enumerável} \}
+    \]
+    é uma \sig. 
+    
+    \begin{proof}
+        Tome $A \in \mathcal{B}$, $A$ é enumerável ou o $A^c$ é enumerável, se $A$ for enumerável, 
+        nós teremos que o $(A^c)^c$ é enumerável logo $(A^c) \in \mathcal{B}$, se $A$ não for 
+        enumerável, então $A^c$ é enumerável e logo $A^c$ também é elemento de $\mathcal{B}$, e a 
+        primeira propriedade foi verificada.  \\
+        Agora tome quaisquer $A_j \in \mathcal{B}$ tais que $A_j$ eles são contáveis, 
+        então $ \bigcup _{i=1} ^{\infty}  A_j$ é enumerável já que a união enumerável de conjuntos 
+        contáveis é enumerável. Tome agora $A_j \in \mathcal{B}$ tal que pelo ou menos um 
+        $A_{j_0} ^c$ é enumerável , logo $(\bigcup_{i=1}^\infty A_j)^c 
+        = \bigcap_{i=1}^\infty A_j ^c \subseteq A_{j_0}^c $, logo 
+        $\bigcup_{i=1}^\infty A_j \in \mathcal{B}$ e provamos todas as propriedades 
+    \end{proof}
+
+\end{exemplo}
+
+\begin{lema} \label{lema1.1}
+    A intercecção de uma família de $\sigma$-álgebras é uma \sig 
+
+    \begin{proof}
+        Seja $ \{ \mathcal{B}_i : i \in \mathcal{I}  \} $ uma família não vazia de \sig s,
+        de uma conjunto $X$ queremos mostrar 
+        que $ \mathcal{B} = \bigcap_{i \in \mathcal{I}} \mathcal{B}_i $ é uma \sig. \\
+        Tome $A \in \mathcal{B}$, então $ A \in \mathcal{B}_i , \forall i \in \mathcal{I}$ e
+        $A^c \in \mathcal{B}_i, \forall i \in \mathcal{I}$, portanto $A^c \in \mathcal{B}$.
+        Temos também que se $\forall j \in \mathbb{N}, A_ {j} \in \bigcap_{i \in \mathcal{I}} \mathcal{B}_i$ então 
+        $\bigcup _{j = 1} ^{\infty} A_j \in \bigcap_{i \in \mathcal{I}} \mathcal{B}_i $ e demonstramos
+        as duas propriedades de \sig, logo $\mathcal{B}$ é uma \sig . 
+    \end{proof}
+
+\end{lema}
+
+\begin{definicao}
+    
+    Um \textbf{espaço mensurável} é uma dupla $(X,\mathcal{B})$, onde $X$ é um conjunto e $\mathcal{B}$
+    uma $\sigma$-álgebra de subconjuntos de $X$. Os elementos de $\mathcal{B}$ são chamados 
+    conjuntos mensuráveis. 
+
+\end{definicao}
+
+\begin{definicao}
+    Uma \textbf{\sig \ gerada} por uma família $\mathcal{E}$ de subcontos de $X$ é a menor \sig \ de $X$ que contém $\mathcal{E}$ e será denotada por $\sigma (\mathcal{E})$. Por construção, podemos definir tal $\sigma$-álgebra da seguinte forma
+    \[
+    \sigma(\mathcal{E}) = \bigcap _{i \in \mathcal{I}} \{ \mathcal{B}_i : \mathcal{B}_i \ \text{é uma \sig \ e } \mathcal{E} \subseteq \mathcal{B}_i  \}    
+    \]
+\end{definicao}
+
+    Note que $\sigma(\sigma(\mathcal{E})) = \sigma(\mathcal{E})$
+
+\begin{definicao}
+    Se $X$ é um espaço métrico, a \sig \ gerada pela família de  subconjuntos abertos de $X$ é chamada de \textbf{$\sigma$-álgebra de Borel}. A $\sigma$-álgebra de Borel na Reta e será denotada como $\mathcal{B}_{\mathbb{R}}$
+\end{definicao} 
+
+
+
+\begin{lema} \label{lema1.2}
+    
+    Se $\mathcal{E} \in \sigma(\mathcal{F}) $ então $ \sigma(\mathcal{E})  \subseteq  \sigma(\mathcal{F})$
+
+    \begin{proof}
+        
+        $\mathcal{E}$ e $\mathcal{F}$ são famílias de subconjuntos de algum conjunto X. Note que se $\mathcal{E}$ está em $\sigma(\mathcal{F})$ então os elementos de $\mathcal{E}$ estão em $\mathcal{F}$ e $\mathcal{E} \subseteq \mathcal{F}$, o que implica que então $ \sigma(\mathcal{E})  \subseteq  \sigma(\mathcal{F})$
+
+    \end{proof}
+
+\end{lema}
+
+\begin{proposicao} \label{prop1.1}
+    
+    A \sig \ de Borel em $\mathbb{R}$ pode ser gerada com
+    
+    \begin{enumerate}[label=(\roman*)]
+        \item Os intervalos abertos $\mathcal{E}_1 = \{ (a,b) : a,b \in \mathbb{R} \}  $
+        
+        \item Os intervalos fechados $\mathcal{E}_2 = \{ [a,b] : a,b \in \mathbb{R} \}  $
+        
+        \item Os intervalos semi-abertos $\mathcal{E}_3 = \{ (a,b] : a,b \in \mathbb{R} \}  $ e $\mathcal{E}_4 = \{ [a,b) : a,b \in \mathbb{R} \}  $
+        
+        \item Os intervalos abertos ilimitados $\mathcal{E}_5 = \{ (a,\infty) : a \in \mathbb{R} \}$ e $\mathcal{E}_5 = \{ (\infty,a) : a \in \mathbb{R} \}$ 
+        
+        \item Os intervalos fechados e ilimitados $\mathcal{E}_6 = \{ (\infty,a] : a \in \mathbb{R} \} $ e $\mathcal{E}_7 = \{ [a, \infty) : a\in \mathbb{R} \}$
+    \end{enumerate}
+
+    \begin{proof}
+        Seja $\tau$ a família dos conjuntos abertos de $\mathbb{R}$, por definição $\sigma(\tau)$ é a \sig \ de Borel. Provaremos cada item individualmente.
+        
+        \begin{enumerate}[label=(\roman*)]
+        \item Como todos os elementos de $\mathcal{E}_1$ são abertos, então nós temos que $\mathcal{E}_1 \subseteq \tau$, logo $\sigma(\mathcal{E}_1) \subseteq \sigma(\tau)$. \\
+        Para a inclusão inversa, basta lembrar que qualquer conjunto aberto de $\mathbb{R}$ pode ser escrito como a união enumerável de intervalos abertos de $\mathbb{R}$, portanto todos os elementos de $\tau$ estão contidos em $\sigma(\mathcal{E}_1)$ e pelo Lema \ref{lema1.2} nós temos que $\tau \in \sigma(\mathcal{E}_1)$ então $\sigma(\tau) \subseteq \sigma( \mathcal{E}_1) = \sigma(\mathcal{E}_1)$. \\
+        Portanto $ \sigma(\tau) = \sigma( \mathcal{E}_1)$.
+        
+        \item Para todo $a,b \in \mathbb{R}, a < b$ nós temos que $(a,b)= \bigcup_{n=1} ^\infty [a + n^{-1}, b - n^{-1}] \in \sige _2) $, logo $\mathcal{E}_1 \in \sige _2)$ e portanto $\sige _1) \subseteq \sige _2)$. Também temos que $[a,b] = \bigcup _{n=1} ^\infty (a + n^{-1}, b - n^{-1}) $ e implicará que $ \sige _2) \subseteq \sige _1) $. Portanto $\sigma(\tau) = \sige _2 )$.
+        
+        \item Tomando $(a,b] = \bigcup _{n=1} ^\infty (a, b- n^{-1}) $ implicará que $\sige _3) \subseteq \sige _1) $ e tomando $(a,b) = \bigcap _{n=1} ^\infty (a,b - n^{-1} ]$ implica que $ \sige _1) \subseteq \sige _3)$. Portanto $ \sigma(\tau) = \sige _ 3)$. A demonstração para $\sige _ 4)$ é análoga.
+        
+        \item Tomando $(a, \infty) = \bigcup _{n=1} ^\infty (a, b + n) $ implica que $\sige _5) \subseteq \sige _1)$ e tomando $(a,b) = (a,\infty) - (b, \infty)$ implica que $\sige _ 1) \subseteq \sige _5)$. Portanto  $ \sigma(\tau) = \sige_5)$. A demonstração para $ \sige _ 6)$ é análoga.
+        
+        \item Tomando $[a, \infty ) = \bigcup _{n=1}^\infty [a, b + n]$ implica que $ \sige _ 6) \subseteq \sige _ 2)$ e tomando $ [a,b] = [a,\infty ) - [b,\infty)$
+        implica que $\sige _ 2) \subseteq \sige _6)$. Portanto $\sigma(\tau) = \sige _ 6)$. A demonstração para $\sige _7) $ é análoga.
+ 
+        \end{enumerate}
+
+    \end{proof}
+
+\end{proposicao}
+       
+
+
+

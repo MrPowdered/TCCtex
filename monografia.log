@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.1.31)  1 FEB 2022 12:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.1.31)  31 MAR 2022 22:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -924,45 +924,45 @@ File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
 \c@mdf@zref@counter=\count356
 Package zref Info: New property: mdf@pagevalue on input line 895.
 ))
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 70.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 75.
  (C:\Users\kaiqu\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.79993pt on input line 70.
+(Font)              scaled to size 10.79993pt on input line 75.
  (monografia.aux)
 \openout1 = `monografia.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Info: Redefining \microtypecontext on input line 70.
-Package microtype Info: Applying patch `item' on input line 70.
-Package microtype Info: Applying patch `toc' on input line 70.
-Package microtype Info: Applying patch `eqnum' on input line 70.
-Package microtype Info: Applying patch `footnote' on input line 70.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Info: Redefining \microtypecontext on input line 75.
+Package microtype Info: Applying patch `item' on input line 75.
+Package microtype Info: Applying patch `toc' on input line 75.
+Package microtype Info: Applying patch `eqnum' on input line 75.
+Package microtype Info: Applying patch `footnote' on input line 75.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 70.
+LaTeX Info: Redefining \showhyphens on input line 75.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1035,7 +1035,7 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-Package hyperref Info: Link coloring ON on input line 70.
+Package hyperref Info: Link coloring ON on input line 75.
  (C:\Users\kaiqu\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (C:\Users\kaiqu\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
@@ -1046,282 +1046,114 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 \c@section@level=\count363
 LaTeX Info: Redefining \Ref on input line 520.
 )
-LaTeX Info: Redefining \ref on input line 70.
-LaTeX Info: Redefining \pageref on input line 70.
-LaTeX Info: Redefining \nameref on input line 70.
+LaTeX Info: Redefining \ref on input line 75.
+LaTeX Info: Redefining \pageref on input line 75.
+LaTeX Info: Redefining \nameref on input line 75.
  (monografia.out) (monografia.out)
 \@outlinefile=\write5
 \openout5 = `monografia.out'.
 
-LaTeX Info: Redefining \Ref on input line 70.
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 92.
+LaTeX Info: Redefining \Ref on input line 75.
+
+ 1.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 12.9599pt on input line 223.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 12.9599pt on input line 223.
+(chapters/espacos_mensuraveis_copy.tex
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 10.79993pt on input line 3.
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 5.
  (C:\Users\kaiqu\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 10.79993pt on input line 92.
+(Font)              scaled to size 10.79993pt on input line 5.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `phv' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 92.
+(Font)              scaled to size 7.19995pt on input line 5.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 5.39996pt on input line 92.
+(Font)              scaled to size 5.39996pt on input line 5.
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 10.79993pt on input line 92.
+(Font)              scaled to size 10.79993pt on input line 5.
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 7.19995pt on input line 92.
+(Font)              scaled to size 7.19995pt on input line 5.
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 5.39996pt on input line 92.
+(Font)              scaled to size 5.39996pt on input line 5.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmss' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 92.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
  (C:\Users\kaiqu\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (C:\Users\kaiqu\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 92.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
  (C:\Users\kaiqu\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (C:\Users\kaiqu\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-<./arquivosdmtex/LogoUFSCar.pdf, id=46, 487.8225pt x 333.245pt>
-File: ./arquivosdmtex/LogoUFSCar.pdf Graphic file (type pdf)
-<use ./arquivosdmtex/LogoUFSCar.pdf>
-Package pdftex.def Info: ./arquivosdmtex/LogoUFSCar.pdf  used on input line 92.
-(pdftex.def)             Requested size: 68.28383pt x 46.6438pt.
-<./arquivosdmtex/LogoDM.pdf, id=47, 410.53375pt x 305.14pt>
-File: ./arquivosdmtex/LogoDM.pdf Graphic file (type pdf)
-<use ./arquivosdmtex/LogoDM.pdf>
-Package pdftex.def Info: ./arquivosdmtex/LogoDM.pdf  used on input line 92.
-(pdftex.def)             Requested size: 54.62706pt x 40.6008pt.
- [0
-
-
-{C:/Users/kaiqu/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./arquivosdmtex/LogoUFSCar.pdf> <./arquivosdmtex/LogoDM.pdf>]
-<ficha-catalografica.pdf, id=72, 597.23125pt x 845.1575pt>
-File: ficha-catalografica.pdf Graphic file (type pdf)
-<use ficha-catalografica.pdf>
-Package pdftex.def Info: ficha-catalografica.pdf  used on input line 116.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-File: ficha-catalografica.pdf Graphic file (type pdf)
-<use ficha-catalografica.pdf>
-Package pdftex.def Info: ficha-catalografica.pdf  used on input line 116.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-<ficha-catalografica.pdf, id=75, page=1, 597.23125pt x 845.1575pt>
-File: ficha-catalografica.pdf Graphic file (type pdf)
-<use ficha-catalografica.pdf, page 1>
-Package pdftex.def Info: ficha-catalografica.pdf , page1 used on input line 116.
-(pdftex.def)             Requested size: 500.77129pt x 708.66365pt.
-File: ficha-catalografica.pdf Graphic file (type pdf)
-<use ficha-catalografica.pdf, page 1>
-Package pdftex.def Info: ficha-catalografica.pdf , page1 used on input line 116.
-(pdftex.def)             Requested size: 712.82822pt x 1008.7418pt.
-File: ficha-catalografica.pdf Graphic file (type pdf)
-<use ficha-catalografica.pdf, page 1>
-Package pdftex.def Info: ficha-catalografica.pdf , page1 used on input line 116.
-(pdftex.def)             Requested size: 712.82822pt x 1008.7418pt.
-File: ficha-catalografica.pdf Graphic file (type pdf)
-<use ficha-catalografica.pdf, page 1>
-Package pdftex.def Info: ficha-catalografica.pdf , page1 used on input line 116.
-(pdftex.def)             Requested size: 712.82822pt x 1008.7418pt.
-File: ficha-catalografica.pdf Graphic file (type pdf)
-<use ficha-catalografica.pdf, page 1>
-Package pdftex.def Info: ficha-catalografica.pdf , page1 used on input line 116.
-(pdftex.def)             Requested size: 712.82822pt x 1008.7418pt.
- [1 <./ficha-catalografica.pdf>]
-<folhadeaprovacao.pdf, id=90, 596.95016pt x 844.83629pt>
-File: folhadeaprovacao.pdf Graphic file (type pdf)
-<use folhadeaprovacao.pdf>
-Package pdftex.def Info: folhadeaprovacao.pdf  used on input line 122.
-(pdftex.def)             Requested size: 596.94872pt x 844.83423pt.
-File: folhadeaprovacao.pdf Graphic file (type pdf)
-<use folhadeaprovacao.pdf>
-Package pdftex.def Info: folhadeaprovacao.pdf  used on input line 122.
-(pdftex.def)             Requested size: 596.94872pt x 844.83423pt.
-<folhadeaprovacao.pdf, id=93, page=1, 596.95016pt x 844.83629pt>
-File: folhadeaprovacao.pdf Graphic file (type pdf)
-<use folhadeaprovacao.pdf, page 1>
-Package pdftex.def Info: folhadeaprovacao.pdf , page1 used on input line 122.
-(pdftex.def)             Requested size: 500.77129pt x 708.72949pt.
-File: folhadeaprovacao.pdf Graphic file (type pdf)
-<use folhadeaprovacao.pdf, page 1>
-Package pdftex.def Info: folhadeaprovacao.pdf , page1 used on input line 122.
-(pdftex.def)             Requested size: 712.49275pt x 1008.35843pt.
-File: folhadeaprovacao.pdf Graphic file (type pdf)
-<use folhadeaprovacao.pdf, page 1>
-Package pdftex.def Info: folhadeaprovacao.pdf , page1 used on input line 122.
-(pdftex.def)             Requested size: 712.49275pt x 1008.35843pt.
-File: folhadeaprovacao.pdf Graphic file (type pdf)
-<use folhadeaprovacao.pdf, page 1>
-Package pdftex.def Info: folhadeaprovacao.pdf , page1 used on input line 122.
-(pdftex.def)             Requested size: 712.49275pt x 1008.35843pt.
-File: folhadeaprovacao.pdf Graphic file (type pdf)
-<use folhadeaprovacao.pdf, page 1>
-Package pdftex.def Info: folhadeaprovacao.pdf , page1 used on input line 122.
-(pdftex.def)             Requested size: 712.49275pt x 1008.35843pt.
- [2 <./folhadeaprovacao.pdf>]
-LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 10.79993pt on input line 126.
- [3
-
-]
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 12.9599pt on input line 134.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 12.9599pt on input line 134.
+(Font)              scaled to size 7.19995pt on input line 51.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 5.39996pt on input line 51.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 56.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 10.79993pt on input line 56.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 82.
+ [1{C:/Users/kaiqu/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
+
+
+] [2]) [3]
+ 2.
+(chapters/espacos_de_medida_copy.tex
+LaTeX Font Info:    Font shape `T1/phv/b/it' in size <12> not available
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 29.
+LaTeX Font Info:    Font shape `T1/phv/b/sl' will be
+(Font)              scaled to size 10.79993pt on input line 29.
  [4
 
 ]
-LaTeX Font Info:    Font shape `T1/phv/b/sl' will be
-(Font)              scaled to size 10.79993pt on input line 148.
- [5
-
-]
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 168.
- [6
-
-] [7
-
-] (monografia.lof)
-\tf@lof=\write6
-\openout6 = `monografia.lof'.
-
- [8] (monografia.lot)
-\tf@lot=\write7
-\openout7 = `monografia.lot'.
-
- [9
-
-] (monografia.toc
-LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 12.9599pt on input line 4.
-LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 4.
-LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 6.29996pt on input line 4.
-LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 12.9599pt on input line 4.
-LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 8.99994pt on input line 4.
-LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 6.29996pt on input line 4.
-)
-\tf@toc=\write8
-\openout8 = `monografia.toc'.
-
- [10
-
-]
- 1.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 216.
-[11
-
-
-]
- 2.
-(chapters/EspacosMensuraveis.tex) [12
-
-]
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 69.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 7.19995pt on input line 69.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 69.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 5.39996pt on input line 69.
+ [5] [6]) [7]
  3.
-[13
+(chapters/medida_de_borel_copy.tex [8
 
-]
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 365.
-LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 365.
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <8> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 365.
-LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 7.19995pt on input line 365.
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <6> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 365.
-LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 5.39996pt on input line 365.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 365.
-LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 4.49997pt on input line 365.
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 365.
-LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 8.99994pt on input line 365.
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <7> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 365.
-LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 6.29996pt on input line 365.
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <5> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 365.
-LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 4.49997pt on input line 365.
-LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 4.49997pt on input line 365.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.29996pt on input line 365.
- [14]
-<exemplo-fig.png, id=209, 659.46375pt x 631.35875pt>
-File: exemplo-fig.png Graphic file (type png)
-<use exemplo-fig.png>
-Package pdftex.def Info: exemplo-fig.png  used on input line 421.
-(pdftex.def)             Requested size: 159.33821pt x 152.54074pt.
- [15 <./exemplo-fig.png>]
+] [9] [10] [11] [12] [13]) [14]
  4.
-(monografia.bbl (monografia.brf)
-\tf@brf=\write9
-\openout9 = `monografia.brf'.
+(chapters/funcoes_mensuraveis.tex [15
 
- [16
-
-]) [17
-
-]
-Ap\^endice A .
-[18
-
-]
-runsystem(makeindex monografia.idx)...executed safely (allowed).
-
- (monografia.ind) [19
-
-
-]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 493.
-<./arquivosdmtex/by-nc-nd.png, id=251, 97.0827pt x 33.9669pt>
-File: ./arquivosdmtex/by-nc-nd.png Graphic file (type png)
-<use ./arquivosdmtex/by-nc-nd.png>
-Package pdftex.def Info: ./arquivosdmtex/by-nc-nd.png  used on input line 493.
-(pdftex.def)             Requested size: 126.20746pt x 44.15695pt.
- [20
-
-
- <./arquivosdmtex/by-nc-nd.png>] (monografia.aux)
+] [16] [17]) [18] (monografia.aux)
 Package rerunfilecheck Info: File `monografia.out' has not changed.
-(rerunfilecheck)             Checksum: 4384830478A6DFFC3D26D019DC1B1CF3;1752.
-Package rerunfilecheck Info: File `monografia.brf' has not changed.
-(rerunfilecheck)             Checksum: 99E83C2D0EE8429A54ACE00A9DE02136;206.
+(rerunfilecheck)             Checksum: 216FF87D58C96143F8D4A267D0BF9ECA;696.
  ) 
 Here is how much of TeX's memory you used:
- 29892 strings out of 478593
- 555059 string characters out of 2844604
- 863458 words of memory out of 3000000
- 47182 multiletter control sequences out of 15000+600000
- 533072 words of font info for 245 fonts, out of 8000000 for 9000
+ 29868 strings out of 478593
+ 550097 string characters out of 2844604
+ 869856 words of memory out of 3000000
+ 46888 multiletter control sequences out of 15000+600000
+ 537099 words of font info for 385 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 124i,17n,132p,1062b,1056s stack positions out of 5000i,500n,10000p,200000b,80000s
-{C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on monografia.pdf (21 pages, 650203 bytes).
+ 124i,16n,132p,1136b,707s stack positions out of 5000i,500n,10000p,200000b,80000s
+{C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on monografia.pdf (18 pages, 213755 bytes).
 PDF statistics:
- 319 PDF objects out of 1000 (max. 8388607)
- 54 named destinations out of 1000 (max. 500000)
- 91801 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 288 PDF objects out of 1000 (max. 8388607)
+ 111 named destinations out of 1000 (max. 500000)
+ 63541 words of extra memory for PDF output out of 74296 (max. 10000000)
 

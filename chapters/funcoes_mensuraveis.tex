@@ -1,0 +1,142 @@
+\begin{definicao}
+    Seja $(X,\mathcal{B})$ um espaço mensurável. Uma função $f: X \to \mathbb{R}$ é dita \textbf{mensurável} ou \textbf{$\mathcal{B}$ mensurável} se $\{x: f(x) > a \} \in \mathcal{B}$ para todo $a \in \mathbb{R}$. Uma função complexa é mensurável se ambas as suas partes, real e complexa, forem mensuráveis. 
+\end{definicao}
+
+\begin{proposicao} \label{prop4.1}
+    Seja $f: X \to \mathbb{R}$. As seguintes condições são equivalentes: 
+    \begin{enumerate}[label=(\roman*)]
+        \item $\{x: f(x) > a \} \in \mathcal{B}$ para todo $a \in \mathbb{R}$
+        \item $\{x: f(x) \geq a \} \in \mathcal{B}$ para todo $a \in \mathbb{R}$
+        \item $\{x: f(x) < a \} \in \mathcal{B}$ para todo $a \in \mathbb{R}$
+        \item $\{x: f(x) \leq a \} \in \mathcal{B}$ para todo $a \in \mathbb{R}$
+    \end{enumerate}
+    \begin{proof}
+        Se $(i)$, então para todo $a \in \mathbb{R}, \{x : f(x)\geq a \} = \bigcap_{n=1}^\infty \{x : f(x)> a - \frac{1}{n}\} \in \mathcal{B}$ pois $\mathcal{B}$ é fechado sob a intersecções enumeráveis, ou seja, $(i) \implies (ii)$. Se $(ii)$, então para todo $a \in \mathbb{R}, \{x: f(x) < a\} = \{x: f(x) \geq a\}^c \in \mathcal{B}$, pois $\mathcal{B}$ é fechado sob o complementar, ou seja, $(ii) \implies (iii)$. Se $(iii)$, então para todo $a \in \mathcal{R}, \{x: f(x) \leq a\} = \bigcap_{n=1}^\infty \{x : f(x) < a + \frac{1}{n}\} \in \mathcal{B}$, ou seja $(iii) \implies (iv)$. E se $(iv)$, então para todo $a \in \mathcal{R} \{x : f(x) > a \} =  \{x : f(x) \leq a \}^c \in \mathcal{B}$, ou seja, $(iv) \implies (i)$ e concluímos a demonstração.
+    \end{proof}
+\end{proposicao}
+
+\begin{proposicao}
+    Se $f$ é mensurável, então $|f|$ é mensurável.
+    \begin{proof}
+        Para todo $a \in \mathcal{R}, \{ x : |f(x)| < a \} = \{ x : f(x) < a \} \cap \{ x : f(x) > -a \} \in \mathcal{B}$, logo $|f|$ é mensurável.
+    \end{proof}
+\end{proposicao}
+
+\begin{proposicao}
+    Seja $X$ um espaço métrico e $\mathcal{B}_X$ a sua $\sigma$-álgebra de Borel, e seja $f: X \to \mathbb{R}$ contínua, então $f$ é mensurável.
+    \begin{proof}
+        $f$ é contínua se, e somente se, $f^{-1}(U)$ é aberto em $X$ para todo aberto $U$ em $\mathbb{R}$. Logo para todo $a \in \mathbb{R}, (a,\infty)$ é aberto em $\mathbb{R}$ e $\{x:f(x)>a\} = f^{-1}(a,\infty)$ é aberto em $X$, e portanto $\{x:f(x)>a\} \in \mathcal{B}_X$.
+    \end{proof}
+\end{proposicao}
+
+\begin{proposicao} \label{prop4.4}
+    Seja $c \in \mathbb{R}$ e sejam $f,g: X \to \mathbb{R}$ mensuráveis, então $f+g, \ -f, \ cf, \ fg, \ max(f,g)$ e $min(f,g)$ são mensuráveis.
+    \begin{proof}
+        fixe $a \in \mathbb{R}$ qualquer. \\
+        $(f+g):$ Se $f(x) + g(x) \geq a$ para todo $x \in X$, então $\{x : f(x) + g(x) < a\} = \emptyset \in \mathcal{B}$ e $f+g$ é mensurável, caso contrário, para todo $x \in X$ tal que $f(x)+g(x) < a$ teremos que $f(x) < a - g(x)$ e que, pela densidade dos racionais nos reais, existe um racional $r$ tal que $f(x) < r < a - g(x)$. Seja $Q$ o conjunto de tais racionais que satisfazem nossa condição, como existem infinitos racionais entre dois números reais e como $card(\mathbb{Q})=card(\mathbb{N})$, então $card(Q)=card(\mathbb{N})$ e $Q$ é enumerável. Portanto  
+        \[
+        \{x: f(x)+g(x)<a\} = \bigcup_{r \in \mathbb{Q}} \big(\{x : f(x) < r\} \cap \{x : g(x) < a - r\} \big) \in \mathcal{B}    
+        \]
+        Como a escolha de $a$ foi arbitrária, então $f+g$ é mensurável. \\
+        $(-f):$ Pelo item $(iii)$ proposição \ref{prop4.1}, $\{x: -f(x) > a\} = \{x: f(x) < -a\} \in \mathcal{B}$, logo $-f$ é mensurável. \\
+        $(cf):$ Se $c>0$, então $\{x: cf(x) > a\} = \{x: f(x) < a/b \} \in \mathcal{B}$; se $c=0$, então ou $a>0$ e $\{x: 0 < a\} \in \mathcal{B}$ ou $a\leq 0$ e $\{x: 0 < a\} = \emptyset \in \mathbb{B}$; se $c<0$ então $cf= |c|(-f)$, onde $-f$ é mensurável e $|c|>0$, o que cai nos casos demonstrados acima. Portanto $cf$ é mensurável para qualquer $c \in \mathbb{R}$. \\
+        $(f^2):$ Se $a<0$, como para todo $x \in X, f(x)^2 \geq 0$, então $\{x:f(x)^2 > a\} = X \in \mathcal{B}$, se $a \geq 0$, então 
+        \[
+        \{x:f(x)^2 > a\} = \{x:f(x)> \sqrt{a}\} \cup \{x:f(x) < - \sqrt{a}\} \in \mathcal{B}
+        \] 
+        Logo $f^2$ é mensurável. \\
+        $(fg):$ Note que, como $f(x)g(x) = \frac{1}{2}[(f(x)+g(x))^2 - f(x)^2 - g(x)^2]$, então $fg$ é mensurável pelos argumentos vistos acima. \\
+        $max(f,g):$ Note que $\{x : max(f(x),g(x))>a\} = \{x : f(x)> a\} \cup \{x : g(x) > a\} \in \mathcal{B}$, então $max(f,g)$ é mensurável. \\
+        $min(f,g):$ Como $min(f,g) = -max(-f,-g)$, então $min(f,g)$ é mensurável.  
+    \end{proof}
+\end{proposicao}
+
+\begin{proposicao}
+    Para todo $n \in \mathbb{N}$, seja $f_n: X \to \mathbb{R}$ mensurável. Para cada $x \in X$, defina 
+    \[
+    g_1(x) = \sup _{n \in \mathbb{N}} f_n(x), \\ 
+    g_2(x) = \inf _{n \in \mathbb{N}} f_n(x), \\
+    g_3(x) = \limsup_{n \to \infty}  f_n(x), \\
+    g_4(x) = \liminf_{n \to \infty} f_n(x)  
+    \]
+    então $g_1$, $g_2$, $g_3$, $g_4$ são mensuráveis.
+    \begin{proof}
+        Note que, dado $a \in \mathbb{R}$, $g_1(x) > a$ se, e somente se, existe $n \in \mathbb{N}$ tal que $f_n(x) > a$, pois então 
+        \[
+        \{x: g_1(x)>a\} = \bigcup _{n=1} ^\infty \{ x : f_n(x) >a \} \in \mathcal{B}     
+        \]
+        E $g_1$ é mensurável. De forma similar, $g_2(x) < a \iff \exists n \in \mathbb{N},f_n (x) < a$, ou seja, 
+        \[
+        \{x: g_2(x)<a\} = \bigcup _{n=1} ^\infty \{ x : f_n(x) <a \} \in \mathcal{B}     
+        \]
+        E pelo item $(iii)$ da \ref{prop4.1}, $g_2$ é mensurável. \\
+        Teremos que $g_3$ é mensurável pois 
+        \[
+        g_3(x) = \limsup_{n \to \infty} f_n(x) = \inf_{n \geq 0} \sup_{m \geq n} f_m(x),   
+        \]
+        que são os casos cobertos por $g_1$ e $g_2$. O mesmo para $g_4$ já que
+        \[
+        g_3(x) = \liminf_{n \to \infty} f_n(x) = \sup_{n \geq 0} \inf_{m \geq n} f_m(x)   
+        \] 
+    \end{proof}
+\end{proposicao}
+
+\section{Funções simples}
+\begin{definicao}
+    Seja $(X,\mathcal{B})$ um espaço mensurável. Para cada $E \in X$, a \textbf{função característica de E} é dada como 
+    \[
+    \mathcal{X}_E (x) = 
+    \begin{cases}
+    1 \text{, se } x \in E; \\
+    0 \text{, se } x \notin E.   
+    \end{cases}    
+    \]
+\end{definicao}
+
+\begin{lema} \label{lema4.1}
+    $\mathcal{X}_E(x)$ é mensurável se $E \in \mathcal{B}$.
+    \begin{proof}
+        Se $a>1$, então $\{x : \mathcal{X}_E(x) < a\} = X \in \mathcal{B}$. \\ 
+        Se $a=1$, então $\{x: \mathcal{X}_E(x)<a\}=E^c \in \mathcal{B}$. \\
+        Se $1>a>0$, então $\{x: \mathcal{X}_E(x)>a\}=E \in \mathcal{B}$. \\ 
+        Se $a=0$, então $\{x: \mathcal{X}_E(x)>a\}=E \in \mathcal{B}$. \\ 
+        Se $a>0$, então $\{x: \mathcal{X}_E(x)>a\}=X \in \mathcal{B}$. \\
+        Portanto $\mathcal{X}_E(x)$ é mensurável.  
+    \end{proof}
+\end{lema}
+
+\begin{definicao}
+    Uma \textbf{função simples} $s: X \to \mathbb{R}$ é uma função tal que 
+    \[
+    s(x) = \sum_{j=1} ^n a_j \mathcal{X}_{E_j} (x)    
+    \]
+    onde $a_j \in \mathbb{R}$, $E_j \in \mathcal{B}$ e $\mathcal{X}_{e_j}(x)$ é a função característica de $E_j$. Ou seja, $s(x)$ pode ser escrita como a combinação linear finita de funções características. Note que, pelo lema \ref{lema4.1} e pela proposição \ref{prop4.4} $s$ é mensurável,
+\end{definicao}
+
+\begin{teorema}
+    Seja $f: X \to \overline{\mathbb{R}}$ mensurável, então existe uma sequência $\{s_n\}$ crescente tal que $s_n \to f$ uniformemente. 
+    \begin{proof}
+        Se $f \geq 0$, para cada $n=1,2,...$ e todo $k=1,2, ... , n 2^n$, seja
+        \[
+            E_{n} ^k = \{ x : \frac{k-1}{2^n} \leq f(x) < \frac{k}{2^n} \}, \\
+            F_n = \{ x: f(x) \geq n \}.
+        \]
+        Note que $\mathbb{R}_+ = \bigg(\bigcup _{k=1} ^{n2^n} E_n ^k \bigg) \cup F_n $. Agora, para todo $x \in X$, seja
+        \[
+        s_n (x) = \sum _{k=1} ^{n 2^n} \frac{k-1}{2^n} \mathcal{X}_{E_n ^k} (x) + n \mathcal{X}_{F_n} (x).     
+        \]
+        Fixe $x \in X$ qualquer. \\
+        Se $f(x) = \infty$, então $s_n(x) = n$ e $\lim _{n \to \infty} s_n (x)= f(x)$. \\
+        Se $f(x) < \infty$, então podemos escolher $N \in \mathbb{N}$ suficientemente grande tal que $ \frac{k_0-1}{2^n} \leq f(x) < \frac{k_0}{2^n}$ para algum $k_0 = 1, 2, ... , N2^N$. Pois então $f(x) \in E_{N} ^{k_0}$ e para todo $n \geq N$
+        \[
+        0 \leq f(x) - s_n(x) < \frac{1}{2^n}.  
+        \]
+        Ou seja, $s_n(x) \to f(x)$. Mais ainda, se existe $U \in X$ tal que $f(x) < \infty$ para todo $x \in U$, então $0 \geq \sup_{x \in U} |s_n(x) - f(x)| < \frac{1}{2^n}$ e então a convergência é uniforme em $U$. \\
+        Se $f$ for qualquer, seja 
+        \[
+        f^+ (x) = max(f(x),0) \\ f^- (x) = max(-f(x),0).    
+        \] 
+        Assim $f^+$ e $f^-$ positivas e mensuráveis e pela proposição \ref{prop4.4}.Pelo argumento acima, sabemos que existem duas sequências de funções simples, $s_n$ e $t_n$, tais que $s_n \to f^+$ e $t_n \to f^-$. Portanto $r_n = s_n - t_n$ é uma função simples tal que $r_n \to f(x)$.
+    \end{proof}
+\end{teorema}
+

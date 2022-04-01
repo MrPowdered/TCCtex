@@ -1,0 +1,147 @@
+
+
+\begin{definicao}
+    
+    Uma \textbf{medida} em um espaço mensurável $(X,\mathcal{B})$ é uma função $\mu: \longrightarrow [\mathcal{B}, +\infty]$ tal que:
+    
+    \begin{enumerate}[label=(\roman*)]
+        \item $\mu(\emptyset) = 0 $;
+        \item \textbf{($\sigma$-aditividade)}: $\mu( \bigcup _ {j=1} ^{\infty} A_j) = \sum ^{\infty} _{j=1} \mu (A_j) $ para quaisquer $A_j \in \mathcal{B} $ disjuntos dois a dois.   
+    \end{enumerate}
+
+Uma medida é \textbf{finitamente aditiva} se: 
+\[ \mu( \bigcup _ {j=1} ^{n} A_j) = \sum ^{n} _{j=1} \mu (A_j) 
+\]
+onde $n \in \mathbb{N}$.
+
+
+\end{definicao}
+    
+\begin{definicao}
+    Um \textbf{espaço de medida} é uma tripla $(X,\mathcal{B},\mu)$, onde $\mu$ é uma medida no espaço mensurável $(X,\mathcal{B})$
+\end{definicao}
+
+
+\begin{teorema} \label{teo2.1}
+    Seja $(X,\mathcal{B},\mu)$ um espaço de medida.
+
+    \begin{enumerate}[label=(\roman*)]
+        \item \textbf{(Monotonicidade)} Se $A,B \in \mathcal{B}$ e $A \subset B$, então $\mu(A) \leq \mu(B)$.
+
+        \item \textbf{(Subaditividade)} Se $\{ A_n \}_1 ^{\infty} \in \mathcal{B}$, então $\mu(\bigcup _{k=1} ^{\infty} A_k) \leq \sum _{k=1} ^{\infty} \mu (A_k) $.
+        
+        \item \textbf{(Continuidade por baixo)} Se $\{ A_n \}_1 ^{\infty} \in \mathcal{B}$ e $A_1 \subset A_2 \subset ...$, então $\mu(\bigcup _{k=1} ^{\infty} A_k)= \lim _{k \longrightarrow \infty} \mu(A_k)  $.
+        
+        \item \textbf{(Continuidade por cima)} Se $\{ A_n \}_1 ^{\infty} \in \mathcal{B}$ e $E_1 \supset E_2 \supset ...$ e $\mu(A_1)< \infty$, então $\mu(\bigcap _{k=1} ^{\infty} A_k)= \lim _{k \longrightarrow \infty} \mu(A_k) $.
+    \end{enumerate}
+
+    \begin{proof}
+        \begin{enumerate}[label=(\roman*)]
+            \item $A \subset B$, então $B= B \setminus A \cup A$ onde $ B \setminus A \cap A = \emptyset$, portanto $\mu(B) =  \mu(B \setminus A) + \mu(A) \geq \mu(A)$ pois $\mu(B \setminus A) \geq 0$. 
+            
+            \item Seja $B_1=A_1$ e $B_k = A_k \ cup _{j=1} ^{k-1} A_j$ para $k>1$. Temos que $B_m \cap B_n = \emptyset$ se $m \neq n$ e $ \bigcup _{j=1} ^{n} A_j = \bigcup _{j=1} ^{n} B_j$  para todo $n$, ou seja, $ \bigcup _{j=1} ^{\infty} A_j = \bigcup _{j=1} ^{\infty} B_j$. Portanto, pelo item anterior, $ \mu(\bigcup _{j=1} ^{\infty} A_j) = \mu(\bigcup _{j=1} ^{\infty} B_j) \leq \sum _{j=1} ^{\infty} \mu(B_j) \leq \sum _{j=1} ^{\infty} \mu(A_j)$ .
+            
+            \item Seja $B_j = A_j \setminus A_{j-1}$, temos que $\bigcup _{j=1} ^\infty B_j = \bigcup _{j=1} ^\infty A_j $ e $B_m \cap B_n = \emptyset$ para todo $m \neq n$. Assim 
+            \begin{align*}
+                \mu(\bigcup _{j=1} ^\infty A_j) &= \mu(\bigcup _{j=1} ^\infty B_j) = \sum _{j=1} ^\infty \mu(B_j) 
+                = \lim _{k \longrightarrow \infty} \sum _{j=1} ^k \mu(B_j) = 
+                \lim _{k \longrightarrow \infty} \sum _{j=1} ^k \mu(A_j \setminus A_{j-1}) \\ 
+                &= \lim _{k \longrightarrow \infty} \sum _{j=1} ^k \mu(A_j) - \mu(A_{j-1}) = \lim _{k \longrightarrow \infty} A_j.
+            \end{align*}
+            
+            \item Seja $B_j = A_1 \setminus A_j$, já que $B_j \cap A_j = \emptyset$, então $\mu(A_1)=\mu(B_j \cup A_j)= \mu(B_j) + \mu(A_j)$ e $\bigcup  _{j=1} ^\infty B_j = A_1 \setminus \bigcap _{j=1} ^\infty A_j $, ou seja $\bigcap _{j=1} ^\infty A_j = A_1 \setminus  \bigcup  _{j=1} ^\infty B_j$, e como $B_1 \subset B_2 \subset ...$, pelo item anterior nós temos que $\mu(\bigcup  _{j=1} ^\infty B_j)= \lim _{n \longrightarrow \infty} \mu(B_n) = \lim _{n \longrightarrow \infty} \mu (A_1) - \mu(A_n)$. Portanto, como $\mu(A_1) < \infty$, nós obtemos que
+            \[
+                \mu(\bigcap _{j=1} ^\infty A_j) = \mu(A_1) - \mu(\bigcup  _{j=1} ^\infty B_j) = \mu(A_1) + \lim _{n \longrightarrow \infty} \mu (A_1) - \mu(A_n) =   \lim _{n \longrightarrow \infty} \mu(A_n).
+            \]
+            
+            
+             
+        \end{enumerate}
+    \end{proof}
+
+\end{teorema}
+
+\begin{definicao}
+    Uma medida é completa se o seu domínio contém todos os subconjuntos do conjunto nulo, ou seja, $(X,\mathcal{B},\mu)$ um espaço de medida, $\mu$ é completa se, e somente se, $A \subseteq N \in \mathcal{B}$ e $\mu(N)=0$, então $A \in \mathcal{B}$. 
+\end{definicao}
+
+\begin{teorema}
+    Seja $(X,\mathcal{B},\mu)$ um espaço de medida, $\mathcal{N}=\{ N \in \mathcal{B} : \mu(N)=0 \}$ e $ \overline{\mathcal{M}} = \{ A \cup B : A \in \mathcal{M} \ \text{e} \ B \in \mathcal{N} \}$. Então $\overline{\mathcal{M}}$ é uma \sig \ e existe uma única extensão $\overline{\mu}$ de $\mu$ para uma medida completa de $\overline{\mathcal{M} }$ 
+\end{teorema}
+
+\begin{definicao}
+    Uma \textbf{medida exterior} em um conjunto não vazio $X$ é uma função $\mu^*: 2^X \longrightarrow [0,\infty]$ tal que 
+\end{definicao}
+
+\begin{enumerate}[label=(\roman*)]
+    \item $\mu^*(\emptyset)=0$;
+    \item \textbf{(Monótona)}  $A \subseteq B$, então $\mu^* (A) \leq \mu^*(B)$;
+    \item \textbf{(Subaditividade enumerável)} $\mu^* (\bigcup _{j=1} ^\infty A_j) \leq \sum _{j=1} ^\infty \mu^* (A_j) $
+\end{enumerate}
+
+\begin{proposicao} \label{prop2.1}
+    Seja $\mathcal{E} \subseteq 2^X$ uma família elementar e seja $\rho: \mathcal{E} \longrightarrow [0,\infty]$ tal que $\emptyset \in \mathcal{E}, X \in \mathcal{E} \ e \ \rho(\emptyset)=0$. Para todo $A \in X$, seja 
+    \[
+    \mu^*(A)= \inf \bigg\{  \sum _{j=1} ^\infty \rho(E_j): E_j \in \mathcal{E} \ \text{e} \ A \subseteq \bigcup_{j=1} ^\infty E_j \bigg\}  
+    \]
+    Então $\mu^*$ é uma medida exterior.
+    
+    \begin{proof}
+        $\muest(\emptyset)=0$ pois basta tomar $E_j=\emptyset$ para todo $j$. Agora se $A \subseteq B$, então 
+        \[
+            A'=\bigg\{  \sum _{j=1} ^\infty \rho(E_j): E_j \in \mathcal{E} \ \text{e} \ A \subseteq \bigcup_{j=1} ^\infty E_j \bigg\} \supseteq \bigg\{  \sum _{j=1} ^\infty \rho(E_j): E_j \in \mathcal{E} \ \text{e} \ A \subseteq B \subseteq \bigcup_{j=1} ^\infty E_j \bigg\} = B'
+        \]
+        Como $A' \supseteq B'$ então $\inf A' \leq \inf B'$, ou seja, $\muest(A) \leq \muest(B)$
+        Agora suponha que $\{ A_j \}_{j=1}^\infty \subseteq 2^X$ e fixe $\epsilon>0$. Pela definição de $\muest$, para cada um dos $j$ existe $\{ E_j ^k \}_{k=1} ^\infty \subseteq \mathcal{E}$ tal que $A_j \subseteq \bigcup _{k=1}^\infty E_j ^k$ e, pela definição de infimo, temos que $\sum _{k=1}^\infty \rho (E_j ^k) \leq \muest(A_j) + \epsilon 2^{-j }$. Tomando $A=\bigcup _{j=1}^\infty A_j$ nós temos que $A \subseteq \bigcup _{j=1}^\infty \bigcup _{k=1}^\infty E_j ^k$ e $\sum _{j=1}^\infty \sum _{k=1}^\infty \rho (E_j ^k) \leq \sum _{j=1}^\infty \muest(A_j) + \sum _{j=1}^\infty \epsilon 2^{-j }$ mas então $\muest(A) \leq \sum _{j=1}^\infty \muest(A_j) + \epsilon$ e como a escolha de $\epsilon$ foi arbitrária, nós concluímos a demonstração.
+    \end{proof}
+
+\end{proposicao}
+
+\begin{definicao}
+    Seja $\mu^*$ uma medida exterior em $X$, um conjunto $A \subseteq X$ é chamado de $\mu^*$ mensurável se, para todo $E \subseteq X$ 
+    \[
+        \mu^*(E)=\mu^*(E \cap A) + \mu^*(E \cap A^c). 
+    \]
+\end{definicao}
+
+\begin{teorema}
+    Se $\mu^*$ é uma medida exterior em $X$, a família $\mathcal{M}$ de conjuntos $\mu^*$ mensuráveis é uma \sig \ e a restrição de $\mu^*$ à $\mathcal{M}$ é uma medida completa.
+\end{teorema}
+
+\begin{definicao}
+    Uma \textbf{pré-medida} em uma álgebra $\mathcal{A} \subseteq 2^X$ é uma função $\mu_0: \mathcal{A} \longrightarrow [0,\infty]$ tal que 
+    \begin{enumerate}[label=(\roman*)]
+        \item $\mu_0(\emptyset)=0$;
+        \item \textbf{($\sigma$-aditividade)} $\{A_j\}_{j=1}^\infty$ uma sequência de conjuntos disjuntos dois a dois de $\mathcal{A}$ tais que $\bigcup _{j=1}^\infty A_j \in \mathcal{A}$, então $\mu_0  ( \bigcup _{j=1}^\infty A_j ) = \sum _{j=1}^\infty \mu_0(A_j)$.
+    \end{enumerate}
+\end{definicao}
+
+\begin{proposicao}
+    Seja $\mu_0$ uma pré-medida em $\mathcal{A}$ e $\mu^*$ definida assim como na proposição \ref{prop2.1} mas sobre $\mu_0$ ao invés de $\rho$ e sobre $\mathcal{A}$ ao invés de $\mathcal{E}$. Teremos então que 
+    \begin{enumerate}[label=(\roman*)]
+        \item $\mu^*$ restrita em $\mathcal{A}$ é igual a $\mu_0$;
+        \item Todo conjunto em $\mathcal{A}$ é $\mu^*$ mensurável.
+    \end{enumerate}
+    \begin{proof}
+        \begin{enumerate}[label=(\roman*)]
+            \item Seja $E \in \mathcal{A}$ qualquer, temos que existe uma sequência de conjunto $\{A_j\}_{1}^\infty$ em $\mathcal{A}$ tal que $E \subseteq \bigcup _{j=1}^\infty A_j$. Seja $B_n = E \cap (A_n \setminus \bigcup _{j=1}^{n-1} A_j) $, então $B_r \cap B_s = \emptyset$ se $r \neq s$ e $E= \bigcup _{j=1}^\infty B_j$. Assim, $\muzero(E) = \sum _{j=1}^\infty \muzero(B_j) \leq \sum _{j=1}^\infty \muzero(A_j)$ pois $ \bigcup _{j=1}^\infty B_j \subseteq \bigcup _{j=1}^\infty A_j$ e pré-medidas são monótonas (a demonstração de tal fato é análoga a demonstração do item (i) do teorema \ref{teo2.1} . Portanto $\muzero(E)\leq \muest(E)$. Para a igualdade inversa, note que $E \subseteq E \cup \emptyset \cup \emptyset \cup ...$, e pela definição de $\muest$ nós finalmente obtemos que $\muest(E) \leq \muzero(E)$.
+            
+            \item Seja $A \in \mathcal{A}$ qualquer e $E \subseteq X$, fixe $\epsilon>0$, temos que existe uma sequência de conjunto $\{A_j\}_{1}^\infty$ em $\mathcal{A}$ tal que $E \subseteq \bigcup _{j=1}^\infty A_j$ e, pela definição de infimo, $\sum _{j=1}^\infty \muzero(A_j) \leq \muest(E) + \epsilon$. Como $\muzero$ é aditiva em $\mathcal{A}$ e como $(A_j \cap A) \cap (A_j \cap A^c) = \emptyset$ com $(A_j \cap A) \subseteq A \ \text{e} \ (A_j \cap A^c) \subseteq A$, então
+            \begin{align*}
+                \muest(E)+\epsilon \geq  \sum _{j=1}^\infty \muzero(A_j) &\geq \sum _{j=1}^\infty \muzero((A_j \cap A) \cup (A_j \cap A^c)) \\ &\geq \sum _{j=1}^\infty \muzero(B_j \cap A) + \sum _{j=1}^\infty \muzero(A_j \cap A^c) \\ &\geq \muest(A_j \cap A) + \muest (A_j \cap A^c)
+            \end{align*}
+            Como a escolha de $\epsilon$ foi arbitrária, nós obtemos um lado da igualdade.
+            Quando ao outro lado da desigualde, como $E \subseteq (A_j \cap A) \cup (A_j \cap A^c)$ e como $\muest$ é aditiva, então $\muest(E) \leq \muest(A_j \cap A) + \muest (A_j \cap A^c)$
+
+        \end{enumerate}
+    \end{proof}
+\end{proposicao}
+
+\begin{definicao}
+    Seja $(X, \mathcal{B},\mu)$ um espaço de medida. $\mu$ é dita \textbf{finita} se $\mu(X)<\infty$. $\mu$ é dita \textbf{$\sigma$-finita} se $\exists A_1, A_2, ... \in \mathcal{B}$ tal que $X=\bigcup _{j=1} ^\infty A_j$, onde $\mu(A_j)<\infty, \forall j = 1,2,...$ 
+\end{definicao}
+
+\begin{teorema} \label{teo2.4}
+    Seja $\mathcal{A} \subseteq 2^X$ uma álgebra, $\muzero$  uma pré-medida em $\mathcal{A}$ e $\mathcal{M}$ \sig \ gerada por $\mathcal{A}$. Então existe uma medida $\mu$ em $\mathcal{M}$ cuja restrição em $\mathcal{A}$ é igual a $\muzero$. Além disso, qualquer outra medida $\nu$ em $\mathcal{M}$ que extende $\muzero$  será tal que $\nu(E) \leq \mu(E)$ para todo $E \in \mathcal{M}$, sendo igual caso $\mu(E)<\infty$. Se $\muzero$  for $\sigma$-finita, então existe uma única extensão de $\muzero$  para uma medida de $\mathcal{M}$
+\end{teorema}
+

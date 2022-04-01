@@ -1,0 +1,226 @@
+
+\begin{definicao}
+    Uma \textbf{medida de Borel} é uma medida cujo domínio é uma \sig \ de Borel.
+\end{definicao}
+
+
+\begin{definicao}
+    Seja $\mu$ uma medida de Borel em $\mathbb{R}$, a \textit{função de distribuição de $\mu$} é definida como 
+    \begin{align*}
+        F_{\mu}: \mathbb{R} & \longrightarrow \overline{\mathbb{R}} \\
+                        x   & \mapsto \mu((-\infty,x]).
+    \end{align*}
+\end{definicao}
+
+\begin{proposicao}
+    Seja $F$ uma medida de distribuição de $\mu$, então $F$ é crescente e contínua à direita.
+    \begin{proof}
+        Seja $x,y \in \mathbb{R}$ tal que $x<y$, assim $(-\infty,x] \subset (-\infty,y]$ e pelo item (i) teorema \ref{teo2.1} do último capítulo, $\mu((-\infty,x])\leq \mu((-\infty,y])$. Portanto $F(x)=\mu((-\infty,x]) \leq \mu((-\infty,y])=F(y)$ e $F$ é crescente. \\
+        Seja $\{x_n\}_1 ^\infty \subset \mathbb{R}$ uma sequência convergente a $x$ pela direita, ou seja, $ x_{j+1} \leq x_j $ para todo $j$. Mas então  $(-\infty,x_{j+1}] \subseteq (-\infty,x_{j}]$ para todo $j$ e, pelo item (iv) do teorema \ref{teo2.1} do capítulo anterior, $ \lim _{n \longrightarrow \infty} \mu((-\infty,x_n]) = \mu(\bigcap _{j=1} ^\infty (-\infty,x_j]) = \mu((-\infty,x])=F(x)$. Como a escolha de $\{x_n\}_1 ^\infty$ foi arbitrária, então $F(x)$ é contínua. 
+    \end{proof}
+\end{proposicao}
+
+\begin{proposicao} \label{prop3.2}
+    Seja $\mathcal{E} = \{(a,b],(a,\infty),\emptyset: -\infty \leq a < b < \infty \ ; \ a,b \in \overline{\mathbb{R}}\}$ o conjunto dos intervalos semi-abertos à esquerda de $\mathbb{R}$. Então o conjunto $\mathcal{A}$ da união contável de elementos de $\mathcal{E}$, ou seja, $\mathcal{A}=\{ \bigcup _{i=1} ^n \mathcal{E}_i : \mathcal{E}_i \in \mathcal{E} \ \text{onde} \ \mathcal{E}_k \cap \mathcal{E}_l = \emptyset, \forall k \neq l  \}$ é uma álgebra e a $\sigma$-álgebra gerada por $\mathcal{A}$ é a \sig \ de Borel.
+    
+    \begin{proof}
+        Já que $\mathbb{R} = (a,\infty)$ onde $a = -\infty$, então $\mathbb{R} \in \mathcal{A}$, o conjunto $\emptyset$ está em $\mathcal{A}$ pois $\emptyset \cup \emptyset \in \mathcal{A}$ . \\
+        Agora tome $A = \bigcup _{i=1} ^m \mathcal{E}_i ^0 \in \mathcal{A} \ \text{e} \ B = \bigcup _{i=1} ^n \mathcal{E}_i ^1 \in \mathcal{A}$ disjuntos, ou seja $\mathcal{E}_r \neq \mathcal{E}_s, \forall r \neq s$. Reindexe os elementos de $A$ e de $B$ da seguinte forma $\mathcal{E}^0 _ 1 = \mathcal{E}_1 ,..., \mathcal{E}^0 _ m = \mathcal{E}_m$ e $\mathcal{E}^1 _ 1 = \mathcal{E}_{m+1} ,..., \mathcal{E}^1 _ n = \mathcal{E}_{m+n} $. Assim é claro que $A \cup B = \bigcup _{i=1} ^{m+n} \mathcal{E}_i$ e $A$ é fechado pela união de elementos disjuntos. \\
+        Para provar que $\mathcal{A}$ é fechado no complemento, primeiro notemos que 
+        \begin{align*}
+            (a,b] \cap (c,d] &= 
+            \begin{cases}
+            \emptyset \ , \ \text{se } b < c \\
+            (c,b] \ , \ \text{se } b>c         
+            \end{cases}  
+            \ \ , \ \ 
+            (a,b] \cap (c,\infty) = 
+            \begin{cases}
+                \emptyset \ , \ \text{se } b < c \\
+                (c,b] \ , \ \text{se } b>c         
+                \end{cases}  \\
+            (a,\infty) \cap (b,\infty) &= 
+            \begin{cases}
+                (a,\infty) \ , \ \text{se } a > b \\
+                (b,\infty) \ , \ \text{se } a < b         
+                \end{cases}     \ , \ \emptyset \cap \mathcal{E}_i = \emptyset
+        \end{align*}
+        O que mostra que $\mathcal{E}$ é fechado sob a intersecção finita. Portanto $A^c = \bigcap _{i=1} ^n \mathcal{E}_i ^c \in \mathcal{E}$ o que implica que $A^c \cup \emptyset \in \mathcal{A}$, concluindo que $\mathcal{A}$ é fechado sob o complementar. 
+        Pela Proposição 1 do capítulo 1 (\ref{prop1.1}), nós temos que $\{(a,b]: a<b ; a,b \in \mathbb{R}\}$ e $\{(a,\infty): a \in \mathbb{R}\}$ geram a \sig \ de Borel na reta, e como $\mathcal{E}$ é a união desses conjuntos, então $\mathcal{E}$ também o gera.
+        
+    \end{proof}
+    
+\end{proposicao}
+
+\begin{proposicao} \label{prop3.3}
+    Seja $F: \mathbb{R} \longrightarrow \mathbb{R}$ crescente e contínua à direita, sejam $(a_j,b_j] \in \mathcal{A}$ para todo $j=1,...,n$ tais que $(a_k,b_k] \cap (a_l,b_l] = \emptyset, \forall k \neq l$, e seja $\mu_0: \mathcal{A} \longrightarrow \mathbb{R}$ definida como 
+    \[
+    \mu_0 \bigg( \bigcup _{i=1} ^n (a_i,b_i] \bigg) = \sum _{i=1} ^n [F(a_i)-F(b_i)]    
+    \] 
+    onde $\mu_0(\emptyset)=0$. Então $\mu_0$ é uma pré-medida na álgebra $\mathcal{A}$
+
+    \begin{proof}
+        Primeiro, devemos mostrar que $\mu_0$ é bem definida. \\
+        O primeiro caso que analisaremos será o caso onde $\bigcup I_{i=1} ^n = I = (a,b]$ ou $I = (a,\infty)$. Como $\mathbb{R}$ é totalmente ordernado sob a operação $\leq$, e como os $I_i's$ são disjuntos, então podemos re-indexá-los de forma que $a=a_1 < b_1 = a_2 < b_2 = ... < b_n = b$, daí 
+        \[
+        \mu_0(I)=F(a)-F(b)=\sum _{j=1} ^n [F(b_{j})- F(a_{j})] = \sum _{j=1} ^n \mu_0((a_j,b_j]) = \sum _{j=1} ^n \mu_0(I_j)   
+        \] 
+        Agora, no caso geral, seja $\bigcup _{i=1} ^n I_i = \bigcup _{j=1} ^m J_j$, assim, para cada $i = 1, ..., n$ nós temos que $I_i = \bigcup_{j=1} ^m (I_i \cap J_J)$ e, como mostrado no caso acima, temos que $\mu_0(I_i) = \sum_{j=1}^m \mu_0(I_i \cap J_j)$. Portanto 
+        \[
+        \sum_{i=1}^n \mu_0(I_i) = \sum_{j=1}^m \sum_{i=1}^n \mu_0(I_i \cap J_j) = \sum_{j=1}^m \mu_0(J_j) 
+        \]
+        e $\mu_0$ é bem definida em $\mathcal{A}$ \\
+        Seja $\bigcup _{j=1} ^\infty I_j \in \mathcal{A}$, $I_j$'s intervalos semi-abertos à esquerda e disjuntos dois a dois. Então, pela definição de $\mathcal{A}$, $\exists n \in \mathbb{N}$ e $\exists J_1,...,J_n \in \mathcal{E}$ onde $\bigcup _{i=1} ^\infty I_i = \bigcup _{j=1} ^n J_j$. Note que agora que basta provar que $\mu_0(J_j)=\sum_{i=1} ^{\infty} \mu_0(J_j \cap I_i)$, pois se tal igualdade for verdadeira, nós obtemos
+        \begin{align*}
+            \mu_0 \bigg(\bigcup_{i=1} ^\infty I_i \bigg) &= \mu_0 \bigg(\bigcup_{j=1} ^n J_j \bigg) = \sum _{j=1} ^ n \mu_0 (J_j) = \sum _{i=1} ^ \infty \sum _{j=1} ^ n \mu_0 (J_j \cap I_i) \\ 
+            &= \sum _{i=1} ^\infty \mu_0 \bigg( \bigcup_{j=1} ^n J_j \cap I_i \bigg) = \sum _{i=1} ^\infty \mu_0 (I_i)
+        \end{align*}
+        Assim, ja que $J_j$ é um intervalo semi-aberto à esquerda, renomearemos-o de $I$ e façamos
+        \[
+        \mu_0 (I)=\mu_0 (\bigcup _{i=1}^n I_i) +  \mu_0 (I \setminus \bigcup _{i=1}^n I_i) \geq  \mu_0 (\bigcup _{i=1}^n I_i) = \sum _{i=1} ^n \mu_0 (I_i)
+        \]
+        E conforme $n \to \infty$ nós obtemos $\mu_0(I)=\sum _{i=1} ^\infty \mu_0(I_i)$ \\
+        Agora para a desigualde reversa, assuma que $I=(a,b]$, com $a$ e $b$ finitos e fixe $\epsilon>0$. Como $F$ é contínua à direita, temos que existe algum $\delta>0$ tal que $F(a+\delta)-F(a)<\epsilon$, e para $I_i=(a_i,b_i]$ existe algum $\delta_i >0$ tal que $F(b_i+\delta_i)-F(b_i)<\epsilon 2^{-i}$. Além disso, note também que como $\bigcup _{i=1}^\infty(a_i,b_i] = (a,b]$ então nós temos que, ou existe algum $a_i$ igual a $a$, ou existe alguma subsequência de $a_i$'s que convergem para $a$, o mesmo para $b$ e os $b_i$'s. Portanto temos que os intervalos abertos $(a_i,b_i + \delta_i)$ cobrem o compacto $[a + \delta,b]$ e assim existe uma subcobertura finita. Seja $(a_1,b_1 + \delta_1), ... , (a_N,b_N + \delta_N)$ tal subcobertura finita, onde foram descartados todos os intervalos que eram subconjunto próprio de outro intervalo e também os índices $i$'s foram devidamente reindexados. Teremos então que $b_i + \delta_i \in (a_{i+1},b_{i+1} + \delta_{i+1})$ para todo $i=1,...,N-1$. \\
+        Finalmente, então 
+        \begin{align*}
+            \mu_0(I) &< F(b)-F(a+\delta) + \epsilon \\
+                     &\leq F(b_n+\delta_N)-F(a_1) + \epsilon \\
+                     &= F(b_n+\delta_N)-F(a_N) + \sum_{i=1}^{N-1}[F(a_{i+1}) - F(a_i)] + \epsilon \\ 
+                     &\leq F(b_n+\delta_N)-F(a_N) + \sum_{i=1}^{N-1}[F(b_{i} + \delta_i) - F(a_i)] + \epsilon \\
+                     &< \sum_{i=1}^{N}[F(b_{i}) + \epsilon 2^{-i} - F(a_i)] + \epsilon \\
+                     &< \sum_{i=1}^{N}[F(b_{i}) - F(a_i)] + 2 \epsilon \\
+                     &\leq \sum_{i=1} ^\infty \mu_0(I_i) + 2 \epsilon
+        \end{align*}
+        
+        E nós obtemos a desigualdade reversa já que a escolha de $\epsilon$ foi arbitrária. Agora para o caso onde $a=-\infty$, para qualquer $M<\infty$ os intervalos $(a_i,b_i+\delta_i)$ cobrem o compacto $[-M,b]$, e por um argumento análogo ao anterior, nós obtemos que $F(b)-F(-M)=\sum_{i=1} ^\infty \mu_0(I_i) + 2 \epsilon$ e como $F$ é contínuo em $-\infty$, nós temos que conforme $\epsilon \to 0$ e $M \to \infty$, $\mu((-\infty,b)) = F(b) - F(-\infty) \leq  \sum_{i=1} ^\infty \mu_0(I_i) $. O mesmo para o caso onde $b=+\infty$, para qualquer $M < \infty$ os intervalos $(a_i,b_i+\delta_i)$ cobrem o compacto $[a,M]$ e nós obtemos  $F(M)-F(a)=\sum_{i=1} ^\infty \mu_0(I_i) + 2 \epsilon$ e conforme $\epsilon \to 0$ e $M \to \infty$, com um argumento análogo ao primeiro e ao segundo caso nós obtemos  $\mu((a,\infty)) = F(+\infty) - F(a) \leq  \sum_{i=1} ^\infty \mu_0(I_i)$ \\
+        Portanto $\mu_0$ é $\sigma$-aditiva e nós concluímos que $\mu_0$ é uma pré-medida
+    \end{proof}    
+\end{proposicao}
+
+\begin{teorema}
+    Se $F: \mathbb{R} \longrightarrow \mathbb{R}$ é uma função crescente e contínua à direita, então existe apenas uma $\mu_F$ medida de Borel em $\mathbb{R}$ tal que $\mu_F((a,b])=F(b)-F(a), \forall a,b \in \mathbb{R}, a<b$. Se $G: \mathbb{R} \longrightarrow \mathbb{R}$ é outra função crescente e contínua à direita, então $\mu_F = \mu_G$ se, e somente se, $F-G$ é constante. Por outro lado, se $\mu$ é uma medida de Borel na reta que é finita em todos os conjuntos de Borel limitados, $F: \mathbb{R} \longrightarrow \mathbb{R}$ definida como 
+
+    \[
+    F(x) = 
+    \begin{cases}
+         \mu((0,x])  \ & , \text{se } x>0, \\
+         0  \ & , \text{se } x=0, \\
+         -\mu((x,0])  \ &, \text{se } x<0 
+    \end{cases}    
+    \]
+    então $F$ é crescente, contínua à direita e $\mu = \mu_F$
+
+    \begin{proof}
+        Pela proposição \ref{prop3.3}, a medida $\mu_F(a,b])=F(b)-F(a)$ é uma pré-medida na álgebra $\mathcal{A}$, e pela proposição \ref{prop3.2}, a $\sigma$-álgebra gerada por $\mathcal{A}$ é a $\sigma$-álgebra de Borel, além disso $\mu_F$ é $\sigma$-finita pois $\mathbb{R}=\bigcup_{j \in \mathbb{Z}} (j,j+1]$ e portanto, pelo teorema 4 do capítulo 2, existe uma única extensão de $\mu_F$ para uma medida de $\mathcal{B}_{\mathbb{R}}$. Se $\mu_G=\mu_F$, note que $\forall x \in \mathbb{R}, \mu_G ((0,x]) =\mu_F ((0,x])$, então $(F-G)(x)=(F-G)(0) = k \in \mathbb{R}$; por outro lado, se $F(x)=G(x)+k$ então $F(b)-F(a)=G(b)-G(a), \forall a,b \in \mathbb{R}$ e $\mu_F = \mu_G$. \\
+        Para a volta, seja $\mu$ uma medida de Borel e $F$ como definida no enunciado. Como $\mu$ é monótona então F é crescente em $[0,\infty)$ e também é crescente em $(-\infty,0]$, e já que para qualquer $x,y \in \mathbb{R}$ tal que $x<0 \leq y$ nós temos que $F(x)=-\mu((x,0]) \leq \mu((0,y]) = F(y)$ então F é crescente em todo $\mathbb{R}$. Seja $a \in \mathbb{R}$, se $a \geq 0$ então para toda sequência de pontos $x_n \to a^+$ nós temos que $F(a)=\mu((0,a])= lim_{x_n \to a^+} \mu((0,x_n])$ pela continuidade de $\mu_0 $ por cima, e se $a < 0$ então $F(a)=-\mu((x,0])= lim_{x_n \to a^+} -\mu((x_n,0])$ pela continuidade por baixo de $\mu$. Portanto $F$ é contínua à direita. A igualdade $\mu = \mu_F$ é óbvia em $\mathcal{A}$, logo segue do teorema 4 do capítulo 2 (\ref{teo2.4}) que existe uma única extensão de $\mu$ para $\mathcal{B}_{\mathbb{R}}$, portanto $\mu = \mu_F$ em $\mathcal{B}_{\mathbb{R}}$.
+    \end{proof}
+\end{teorema}
+\begin{definicao}
+    A \textbf{medida de Lebesgue-Stieltjes} associada a função F (F crescente e contínua à direita) é o completamento da medida $\mu_F$. Denotaremos tal medida de Lebesgue-Stieltjes simplismente como $\mu$, e seu domínio como $ \mathcal{M}_\mu$. Para todo $E \in \mathcal{M}_{\mu}$ nós teremos:
+    \[
+        \mu(E)=\inf \bigg\{ \sum _{j=1}^{\infty} \mu((a_j,b_j]) : E \subset \bigcup _{j=1} ^\infty (a_j,b_j] \bigg\}        
+    \]
+\end{definicao}
+
+\begin{lema}\label{lema3.1}
+    Se $E \in \mathcal{M}_u$, então
+    \[
+    \mu(E)=\inf \bigg\{ \sum _{j=1}^{\infty} \mu((a_j,b_j)) : E \subset \bigcup _{j=1} ^\infty (a_j,b_j) \bigg\}    
+    \]
+
+    \begin{proof}
+        Seja $E \subseteq \bigcup_{i=1}^\infty (a_i,b_i)$ e denote o lado direito da igualdade como $\nu(E)$. Temos que para cada $i=1,2,...; \ (a_i,b_i) = \bigcup_{i=1}^\infty I_j ^k$ onde $I_j ^k=(c_j ^k,c_j ^{k+1}]$ são intervalos semi-abertos a esquerda e disjuntos dois a dois tais que $c_j ^1 = a_j$ e $c_j ^k$ é crescente e convergente para $b_j$ conforme $k \to \infty$. Assim $E \subseteq \bigcup_{j,k=1}^\infty I_{j}^k$ e então 
+        \[
+        \sum_{i=1}^\infty \mu((a_i,b_i))=\sum_{j,k=1} ^\infty \mu(I_j ^k) \geq \mu(E)   
+        \]
+        Portanto, $\mu(E) \leq \nu(E)$. Agora fixe $\epsilon > 0$ qualquer. Temos que existe $\{(a_i,b_i]\}_1 ^\infty$ onde $E \subseteq \bigcup_{i=1}^\infty (a_i,b_i]$ e $\sum_{i=1}^\infty \mu ((a_i,b_i]) \leq \mu(E) + \epsilon$, e como $F$ é contínua à direita, para cada $i=1,2,...$, existe $\delta_i > 0$ tal que $F(b_i + \delta_i)-F(b_i) < \epsilon 2^{-i}$. Mas então $E \subseteq \bigcup _{i=1}^\infty (a_i,b_i+\delta_i)$ e 
+        \[
+        \sum_{i=1}^\infty \mu((a_i,b_i+\delta_i))  \leq \sum_{i=1}^\infty \mu((a_i,b_i]) + \epsilon \leq \mu(E) + \epsilon    
+        \]
+        Como a escolha de $\epsilon$ foi arbitrária, nós obtemos que $\nu(E) \leq \mu(E)$
+    \end{proof}
+
+
+\end{lema}
+
+\begin{teorema} \label{3.2}
+    Se $E \in \mathcal{M}_u$, então 
+    \begin{align*}
+        \mu(E) &= \inf \{ \mu(U) : U \supseteq E \ e \ U \ \acute{e}  \ aberto \} \\
+               &= \sup \{ \mu(K) : K \subseteq E \ e \ K \ \acute{e} \ compacto \} 
+    \end{align*}
+
+    \begin{proof}
+        Seja $U$ aberto tal que $E \subseteq U$, então $\mu(E) \leq \mu(U)$ pois $\mu$ é monotona. Agora dado $\epsilon>0$ qualquer, pelo lema \ref{lema3.1} sabemos que existe uma cobertura $U = \bigcup_{j=1}^\infty (a_j,b_j)$ tal que $E \subseteq U$ e $\mu(U) \leq \mu(E) + \epsilon$, e como a união enumerável de abertos é aberta, então $U$ é aberto. E com isso nós concluímos a primeira igualdade. \\
+        Quanto a segunda igualdade, como $K \subseteq E$ e como $K \in \mathcal{B}_\mathbb{R}$, então pela monôtonicidade de $\mu$, $\mu(K) \leq \mu(E)$. Para a desigualdade reversa, dividiremos em casos. Se $E$ for limitado e fechado, então $E$ é compacto e a igualdade é valida. Se $E$ for aberto, então $E^c$ é fechado e $\overline{E}$ é compacto, logo $\overline{E} \cap E^c$ é compacto. Pela primeira igualdade nós sabemos que, para todo $\epsilon > 0$, existe um aberto $U \supset \overline{E} \setminus E$ tal que 
+        \begin{equation}
+            \mu(U) \leq \mu(\overline{E} \setminus E) + \epsilon
+            \label{3.2.01}
+        \end{equation}
+        Tome $K=\overline{E} \setminus U$, daí 
+        \[
+        K = \overline{E} \setminus U = \overline{E} \cap U^c \subseteq \overline{E} \cap (\overline{E} \cup E) = \emptyset \cup (\overline{E} \cap E) = \emptyset \cup E = E 
+        \]
+        Então $K \subseteq E$. Além disso, como $E = K \cup (E \setminus K)$, onde $K \cap (E \setminus K) = \emptyset$ então
+        \begin{equation}
+             \mu(K) = \mu(E) - \mu(E \setminus K)
+             \label{3.2.1}  
+        \end{equation} 
+        Agora note que 
+        \begin{equation}
+            E \setminus K = E \setminus (\overline{E} \setminus U) = E \cap (\overline{E} \setminus U)^c = E \cap (\overline{E} \cap U ^c)^c = E \cap (\overline{E}^c \cup U) = (E \cap \overline{E}^c) \cup (E \cap U) = E \cup U  
+            \label{3.2.2}
+        \end{equation}
+        Substituindo \ref{3.2.2} em \ref{3.2.1} nós obtemos 
+        \begin{equation}
+            \mu(K) = \mu(E) - \mu(E \cap U)
+            \label{3.2.3}
+        \end{equation}
+        Mas como $U = (E \cap U) \cup (U \cap E ^c)$, então $\mu(E \cap U) = \mu(U) - \mu(U \setminus E)$, substituindo isso em \ref{3.2.3} nós obtemos
+        \begin{equation}
+            \mu(K) = \mu(E) - [\mu(U) - \mu(U \setminus E)]
+            \label{3.2.4}
+        \end{equation}
+        Lembremos agora que a nossa escolha de $U$ foi tal que $U \supset \overline{E} \setminus E$, então $U \setminus E \supset (\overline{E} \setminus E)$ e pela monotonicidade de $\mu$ juntamente com a igualdade \ref{3.2.4} nós teremos
+        \begin{equation}
+            \begin{split}
+                \mu(K) & = \mu(E) - \mu(U) + \mu(U \setminus E) \\    
+                       & \geq \mu(E) - \mu(U) + \mu(\overline{E} \setminus E) 
+            \end{split}
+            \label{3.2.5}
+        \end{equation}  
+        Agora, pela desigualdade \ref{3.2.01} nós temos que $ \mu(\overline{E}\setminus E) - \mu(U) \geq - \epsilon$ e pela desigualdade \ref{3.2.5}, nós teremos
+        \begin{equation}
+            \begin{split}
+                \mu(K) & \geq \mu(E) - \mu(U) + \mu(\overline{E} \setminus E) \\
+                       & \geq \mu(E) - \epsilon
+            \end{split}
+        \label{3.2.6}    
+        \end{equation}
+        E nós obtemos a igualdade caso $E$ for aberto e limitado. \\
+        Nos resta o caso onde $E$ não é limitado. Nesse caso, seja $E_j = E \cap (j, j+1]$, como visto acima, sabemos que para qualquer $\epsilon>0$ existe um compacto $K_j \subset E_j$ tal que $\mu(K_j) \geq \mu(E_j) - \epsilon 2^{-j}$. Seja $H_n = \bigcup _{j=-n} ^n K_j$, então $H_n$ é compacto e $H_n \subset E$, pois então $\mu(H_n) \geq \mu(\bigcup _{j=-n} ^n E_j) - \epsilon$ e conforme $n \to \infty$, nós obtemos a desigualdade que desejavamos, concluindo, por final, que a segunda desigualdade é verdadeira.
+    \end{proof}
+\end{teorema}
+
+
+\begin{definicao}
+    A \textbf{medida de Lebesgue} é a medida de Lebesgue-Stieltjes associada a função $F(x)=x$. A partir desse momento, nos referiremos como medida a medida de Lebesgue e denotaremos tal medida por $m$. 
+\end{definicao}
+
+\begin{exemplo}
+    A medida dos números racionais é zero.
+    \begin{proof}
+       Como o conjunto dos racionais é enumerável, então para cada racional $r_j$, dado $\epsilon>0$ qualquer, nós temos que $r_j \in \big(r_j,r_j + \epsilon 2^{-j} \big)$ e que $\mathbb{Q} \subset \bigg\{ \bigcup _{j=1} ^\infty \big(r_j,r_j + \epsilon 2^{-j} \big) : \forall r_j \in \mathbb{Q} \bigg\}$. Portanto, para todo $r_j \in \mathbb{Q}$ nós temos $0 \leq m (\mathbb{Q}) \leq \sum _{j=1}^\infty m \big(r_j,r_j + \epsilon 2^{-j} \big) = \sum _{j=1}^\infty \big( r_j + \epsilon 2^{-j} - r_j \big) = \epsilon$. Como a escolha de $\epsilon$ foi arbitrária, então $m(\mathbb{Q}) = 0$. 
+    \end{proof}
+\end{exemplo}
+
+\begin{exemplo}
+    A medida do conjunto de cantor é zero.
+    \begin{proof}
+        Seja $C$ o conjunto de cantor, $C$ é construído a partir do intervalo $[0,1]$, removendo o segundo terço aberto do intervalo, e fazendo o mesmo para cada um dos intervalos subsequentes. Note que o conjunto $C'$ dos intervalos removidos é enumerável, então
+        \[
+        m(C) = m([0,1]) - m(C') = 1 - \sum_{j=0}^\infty \frac{2^j}{3^{j+1}} = 1 - \frac{1}{3} \cdot \frac{1}{1- (2/3)} = 0.   
+        \]  
+    \end{proof}
+\end{exemplo}
+

@@ -66,6 +66,11 @@
 \usepackage{enumitem}
 % \usepackage[•]{•}
 
+\newcommand{\sig}{$\sigma$-álgebra}
+\newcommand{\sige}{\sigma(\mathcal{E}}
+\newcommand{\muest}{\mu^*}
+\newcommand{\muzero}{\mu_0}
+
 
 \begin{document}
 
@@ -74,22 +79,22 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
 % Título do trabalho
-\titulo{Título do trabalho $\mathbb{R}^n$}
+%\titulo{Título do trabalho $\mathbb{R}^n$}
 
 % Autoria - seu nome
-\autoria{Nome do autor(a)}
+%\autoria{Nome do autor(a)}
 
 % Ano da defesa depósito
-\ano{2021}
+%\ano{2021}
 
 % Orientação - preencha o campo correspondente
-\orientador{Nome do Orientador}
+%\orientador{Nome do Orientador}
 %\orientadora{Nome da orientadora}
 %\coorientador{Nome da coorientador}
 %\coorientadora{Nome da coorientadora}
 
 % A capa é um elemento OBRIGATÓRIO 
-\capa
+%\capa
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Elementos pré-textuais
@@ -112,60 +117,58 @@
 % a ficha catalográfica em um arquivo .PDF, fazendo o download 
 % automático.
 % Acesso: https://www.sibi.ufscar.br/servicos/gerador-de-ficha-catalografica
-\thispagestyle{empty}
-\includepdf[width=1.1\textwidth]{ficha-catalografica.pdf}
+%\thispagestyle{empty}
+%\includepdf[width=1.1\textwidth]{ficha-catalografica.pdf}
 
 % A folha de aprovação é elaborada e fornecida pela 
 % Coordenação de Curso (TCC) ou pelo 
 % Programa de Pós-Graduação (PPGECE, Profmat ou PPGM)
-\thispagestyle{empty}
-\includepdf[width=1.1\textwidth]{folhadeaprovacao.pdf}
+%\thispagestyle{empty}
+%\includepdf[width=1.1\textwidth]{folhadeaprovacao.pdf}
 
 % Dedicatória
 % Comente o ambiente a seguir caso não fizer uso.
-\begin{dedicatoria}
 
-A dedicatória é um elemento OPCIONAL em que \\ o autor presta homenagem ou dedica seu trabalho.
-
-\end{dedicatoria}
+%\begin{dedicatoria}
+%
+%A dedicatória é um elemento OPCIONAL em que \\ o autor presta homenagem ou dedica seu trabalho.
+%
+%\end{dedicatoria}
 
 % Agradecimento
 % Comente o ambiente a seguir caso não fizer uso.
-\begin{agradecimentos}
 
-É um elemento OPCIONAL em que o autor faz agradecimentos aos que contribuíram de
-maneira relevante à elaboração do trabalho.
-
-\end{agradecimentos}
+%\begin{agradecimentos}
+%
+%É um elemento OPCIONAL em que o autor faz agradecimentos aos que contribuíram de
+%maneira relevante à elaboração do trabalho.
+%
+%\end{agradecimentos}
 
 % Epígrafe
 % É um elemento OPCIONAL em que o autor pode apresentar uma citação. 
 % Deve-se fazer a indicação de autoria (citação) e a referência deve 
 % constar na lista de Referências no final do trabalho.
 % Comente o ambiente a seguir caso não fizer uso.
-\begin{epigrafe}
-Demonstração: Evidente \\
-\textbf{Elon Lages Lima} \cite[p. 154]{elon}.
-\end{epigrafe}
+%\begin{epigrafe}
+%Demonstração: Evidente \\
+%\textbf{Elon Lages Lima} \cite[p. 154]{elon}.
+%\end{epigrafe}
 
 % Até 5 palavras-chaves - preencha os campos apropriados
 % {1o campo-> em português}{2o campo-> em inglês}
-\palavrachaveI{Chave 1}{Key 1}
-\palavrachaveII{Chave 2}{Key 2}
-\palavrachaveIII{Chave 3}{Key 3}
+
+%\palavrachaveI{Chave 1}{Key 1}
+%\palavrachaveII{Chave 2}{Key 2}
+%\palavrachaveIII{Chave 3}{Key 3}
 %\palavrachaveIV{Chave 4}{Key 4}
 %\palavrachaveV{Chave 5}{Key 5}
 
 % Resumo na língua vernácula (Português)
-\begin{resumo}
-Elemento OBRIGATÓRIO, deve apresentar os pontos relevantes do texto, de forma
-concisa e que permita uma visão rápida e clara do conteúdo e das conclusões do
-trabalho. Indica-se que o resumo tenha no máximo 500 palavras e deve ser
-elaborado de acordo com ABNT NBR 6028/2003. Abaixo do resumo devem ser 
-colocadas as palavras-chave. A indicação Palavra-chave deve ser em negrito 
-seguida de dois pontos e espaço. Cada palavra deve ser separada uma da outra 
-por ponto final.
-\end{resumo}
+
+%\begin{resumo}
+%resumo
+%\end{resumo}
 
 % Resumo em língua estrangeira (Inglês)
 % Versão do resumo em outro idioma para divulgação internacional. É permitido
@@ -178,31 +181,34 @@ por ponto final.
 % em razão do pouco uso.
 % Entrar em contato com seixas@ufscar.br
 
-\begin{abstract}
-Version of the abstract in another language for international dissemination. Prepare the abstract in a foreign language accordingly with ABNT NBR 6028/2003. Below the abstract the keywords must be placed. The indication Keywords must be in bold followed by a colon and space. Each word must be separated from each other by a period.
-\end{abstract}
+%\begin{abstract}
+%abstract
+%\end{abstract}
 
 % Lista de ilustrações
 % Elemento OPCIONAL, precede o Sumário. São consideradas ilustrações: desenhos,
 % esquemas, fluxogramas, fotografias, gráficos, mapas, organogramas, plantas,
 % quadros, retratos e outras. Recomenda-se criar lista própria, sempre que o número
 % de itens ultrapassar 5. Sua construção gráfica é a mesma do Sumário.
-\listoffigures   
-\cleardoublepage
+
+%\listoffigures   
+%\cleardoublepage
 
 % Lista de Tabelas
 % Elemento OPCIONAL elaborada de acordo com a ordem apresentada no texto, tendo
 % cada item designado por seu nome específico, acompanhado do respectivo número
 % da folha ou página.
-\listoftables
-\cleardoublepage
+
+%\listoftables
+%\cleardoublepage
 
 % Sumário
 % Elemento OBRIGATÓRIO que apresenta a enumeração das divisões, seções e outras
 % partes do trabalho, na mesma ordem e grafia em que aparecem no texto.
 % O Sumário deve ser elaborado de acordo com ABNT NBR 6027/2012.
-\tableofcontents
-\cleardoublepage
+
+%\tableofcontents
+%\cleardoublepage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Elementos textuais
@@ -211,10 +217,23 @@ Version of the abstract in another language for international dissemination. Pre
 %     Desenvolvimento, que detalha a pesquisa ou estudo realizado e a​ 
 %     Conclusão​ .
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Intrudução} %%lembrar da introdução
+
+%\chapter{Intrudução} %%lembrar da introdução
 
 \chapter{Espaços Mensuráveis}
-\input{chapters/EspacosMensuraveis.tex}
+\input{chapters/espacos_mensuraveis_copy.tex}
+
+\chapter{Espaços de medida}
+\input{chapters/espacos_de_medida_copy.tex}
+
+\chapter{Medida de Borel}
+\input{chapters/medida_de_borel_copy.tex}
+
+\chapter{Funções Mensuráveis}
+\input{chapters/funcoes_mensuraveis.tex}
+
+
+
 %  .....                   <<<<---- Pode fazer via \input{file.tex}
 %\chapter{}
 %\chapter{Considerações finais}
@@ -322,118 +341,6 @@ Version of the abstract in another language for international dissemination. Pre
 % -> Hyperref warning - Token not allowed in a PDF string
 % \texorpdfstring{}{} possui dois argumentos, o primeiro para LaTeX e o segundo 
 % para pdf
-\chapter{Modelo matemático para o \texorpdfstring{$\mathbb{R}^n$}{Rn}}
-
-Neste trabalho apresentamos o método relativístico para capturarmos um leão no deserto. Basicamente, distribuiremos sobre o deserto um número grande de iscas para leão contendo a estrela companheira de Sirius. Transcorrido o tempo necessário para que as iscas tenham sido comidas, enviamos um raio de luz através do deserto. Este raio de luz irá se curvar ao redor do leão confundindo-o e assim podemos nos aproximar sem perigo \cite{einstein}.
-
-
-\section{A importância da escrita em Matemática \texorpdfstring{$x,y \in \mathbb{R}^n$}{x,y Rn}}
-
-Todo iniciante em matemática tem conhecimento que a soma de duas quantidades pode ser expressa na forma
-\begin{equation}
-1+1=2.
-\label{obvio}
-\end{equation}
-No entanto, esta forma de representação não é só banal como também esteticamente inapropriada. Mesmo o mais iniciante sabe que
-\[ 1 = \ln e, \]
-e que,
-\[ 1 = \sin^{2} q + \cos^{2} q. \]
-Além disso, é imediato que
-\[ 2 = \sum_{n=0}^{\infty} \frac{1}{2^{n}}. \]
-Isto permite-nos expressar a equação \ref{obvio} de forma cientificamente mais aceitável:
-\begin{equation}
-\ln e + ( \sin^{2} q + \cos^{2} q ) = \sum_{n=0}^{\infty} \frac{1}{2^{n}}.
-\label{obvio2}
-\end{equation}
-Também é imediatamente óbvio que
-\[ 1 = \cosh p \sqrt{1-\tanh^{2} p} \]
-e uma vez que
-\[ e = \lim_{\delta \rightarrow \infty} \left( 1+\frac{1}{\delta}
-\right)^{\delta} \]
-podemos simplificar \ref{obvio2} e então obter
-\begin{equation}
-\ln \left\{\lim_{\delta \rightarrow \infty} \left( 1+\frac{1}{\delta}
-\right)^{\delta} \right\} + ( \sin^{2} q + \cos^{2} q ) = \sum_{n=0}^{\infty}
-\frac{\cosh p \sqrt{1-\tanh^{2} p}}{2^{n}}.
-\label{obvio3}
-\end{equation}
-Considerando o fato que
-\begin{equation}
-0! = 1
-\label{obvio4}
-\end{equation}
-e que a inversa da transposta de uma matriz é igual a transposta da inversa da matriz, podemos simplificar mais ainda a expressão \ref{obvio3} removendo a restrição não natural para um espaço unidimensional introduzindo para isto a matriz $\mathbf{X}$\footnote{Podemos interpretar a matriz $\mathbf{X}$ como a representação de uma transformação linear $T :V \rightarrow V$ sendo que $V$ é um espaço vetorial sobre o corpo dos reais de dimensão finita $n$ e $T \in {\cal L}(V,V) \sim M_{n \times n}({\mathbf{I\!R}})$}.
-\begin{equation}
-(\mathbf{X}^{t})^{-1} - (\mathbf{X}^{-1})^{t} = 0
-\label{vetor}
-\end{equation}
-onde
-\begin{eqnarray*}
-\mathbf{X} = \left( \begin{array}{cccc}
-                       x_{11} & x_{12} & \ldots & x_{1n} \\
-                       x_{21} & x_{22} & \ldots & x_{2n} \\
-                       \vdots & \ddots & & \vdots \\
-                       x_{n1} & x_{n2} & \ldots & x_{nn}
-                     \end{array}
-             \right).
-\end{eqnarray*}
-Substituindo \ref{vetor} em \ref{obvio4} teremos
-\[ \left[ (\mathbf{X}^{t})^{-1} - (\mathbf{X}^{-1})^{t} \right] ! = 1. \]
-Substituindo em \ref{obvio3} então reduzimos \ref{obvio} em
-\begin{eqnarray}
-\ln \left\{ \lim_{\delta \rightarrow \infty} \left( \left[ (X^{t})^{-1} -
-(X^{-1})^{t} \right] ! +\frac{1}{\delta}
-\right)^{\delta} \right\} &+& ( \sin^{2} q + \cos^{2} q )  \nonumber \\
-&=& \sum_{n=0}^{\infty}
-\frac{\cosh p \sqrt{1-\tanh^{2} p}}{2^{n}}.
-\label{obvio5}
-\end{eqnarray}
-É imediatamente óbvio que \ref{obvio5} é matematicamente fácil de compreensão e cientificamente mais respeitável que \ref{obvio}.
-
-\section{Um exemplo de tabela}
-
-Segue um exemplo de tabela.
-
-\begin{table}[H]
-\begin{center}
-\caption{Rendimentos dos estudantes.}
-\label{tab-exemplo}
-\begin{tabular}{|c|c|c|c|} \hline
-\textbf{RA} & \textbf{Avaliação 1} & \textbf{Avaliação 2} & \textbf{Média}} = 60\%{[Avaliação 1] + 40\% {[Avaliação 2]} \\ \hline
-12345      & 1,16    & 1,01    & 1,10   \\ \hline
-23456       & 1,10    & 1,10    & 1,10   \\ \hline
-34567       & 1,04    & 1,19    & 1,10   \\ \hline                                  
-\end{tabular}
-\caption*{Fonte: Elaborado pelo autor.}
-\end{center}
-\end{table}
-
-O rendimento dos estudantes é mostrado na Tabela \ref{tab-exemplo}.
-
-\section{Um exemplo de figura}
-
-Segue um exemplo de figura.
-
-\begin{figure}[H]
-\begin{center}
-\caption{Superfície Costa.}
-\label{fig-exemplo}
-\includegraphics[width=0.35\textwidth]{exemplo-fig}
-\caption*{Fonte: Wikipédia\footnotemark.}
-\end{center}
-\end{figure}
-\footnotetext{\url{https://commons.wikimedia.org/wiki/File:Costa\%27s_Minimal_Surface.png}. Acesso em: 20 ago. 2021.}
-
-A Superfície Costa\index{Superfície Costa} mostrada na Figura \ref{fig-exemplo} é uma superfície com curvatura média nula descoberta pelo matemático brasileiro Celso José da Costa.
-
-\chapter{Considerações finais}
-
-\citeonline{cordeiro} faz diversas considerações sobre a boa redação matemática. Recomendamos fortemente este texto.
-
-\citeonline{anton} mostra uma referência com três autores. 
-
-\citeonline{einstein} é um exemplo de referência com mais de três autores. 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % FIM DO EXEMPLO
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -453,8 +360,9 @@ A Superfície Costa\index{Superfície Costa} mostrada na Figura \ref{fig-exemplo
 % ATENÇÃO: NÃO UTILIZAR O COMANDO \nocite{*}
 % TODAS AS REFERÊNCIAS DEVEM SER CITADAS NO TEXTO
 % \cite[]{} ou \citeonline[]{}
-\bibliography{referencias}
-\addcontentsline{toc}{chapter}{REFER\^{E}NCIAS}
+
+%\bibliography{referencias}
+%\addcontentsline{toc}{chapter}{REFER\^{E}NCIAS}
 
 % Apêndice
 % Elemento OPCIONAL que apresenta texto ou documento elaborado pelo autor, a fim de
@@ -462,15 +370,15 @@ A Superfície Costa\index{Superfície Costa} mostrada na Figura \ref{fig-exemplo
 % identificado por letras maiúsculas consecutivas, travessão e respectivo título.
 % Comente o ambiente a seguir caso não fizer uso.
 
-\begin{appendices}
-
-\chapter{Parte que não será lida do trabalho}
-
-Segue com o texto e partes que irão para o Apêndice. 
-
-Remover caso não fizer uso.
-
-\end{appendices}
+%\begin{appendices}
+%
+%\chapter{Parte que não será lida do trabalho}
+%
+%Segue com o texto e partes que irão para o Apêndice. 
+%
+%Remover caso não fizer uso.
+%
+%\end{appendices}
 
 % Anexo  --> a ser implementado sob demanda em razão do pouco uso
 % Entrar em contato com seixas@ufscar.br
@@ -486,10 +394,13 @@ Remover caso não fizer uso.
 % USO: ao longo do texto, após a palavra que irá para o Índice colocar 
 % \index{<palavra>}
 % Maiores detalhes em https://pt.overleaf.com/learn/latex/Indices
-\printindex
+
+
+%\printindex
  
 % Licença Creative Commons - Repositório UFSCar
-\cleardoublepage
-\licenca
+
+%\cleardoublepage
+%\licenca
 
 \end{document}
