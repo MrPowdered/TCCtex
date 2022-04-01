@@ -1,0 +1,29 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[Anton, Bivens e Davis 2007]{anton}
+\abntrefinfo{Anton, Bivens e Davis}{ANTON; BIVENS; DAVIS}{2007}
+{ANTON, H.; BIVENS, C.~I.; DAVIS, S.~L. \textbf{C{\'a}lculo - Volume I}. 8. ed.
+  [S.l.]: Bookman, 2007.}
+
+\bibitem[Filho 2018]{cordeiro}
+\abntrefinfo{Filho}{FILHO}{2018}
+{FILHO, D.~C. de M. \textbf{Manual de Redação Matemática}. 2. ed. Rio de
+  Janeiro: SBM, 2018.  (Coleção do Professor de Matemática).}
+
+\bibitem[Lima 1976]{elon}
+\abntrefinfo{Lima}{LIMA}{1976}
+{LIMA, E.~L. \textbf{Curso de Análise - Volume 1}. 4. ed. Rio de Janeiro:
+  Instituto de Matemática Pura e Aplicada, 1976.  (Projeto Euclides).}
+
+\bibitem[Stephani et al. 2003]{einstein}
+\abntrefinfo{Stephani et al.}{STEPHANI et al.}{2003}
+{STEPHANI, H. et al. \textbf{Exact solutions of Einstein's field equations}. 2.
+  ed. [S.l.]: Cambridge University Press, 2003.  (Cambridge monographs on
+  mathematical physics).}
+
+\end{thebibliography}
