@@ -1,0 +1,58 @@
+\documentclass[12pt,a4paper]{article} 
+\usepackage[brazil]{babel} %
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{exscale}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+%\usepackage{amstext}
+\usepackage{amssymb}
+\usepackage{tabto}
+\usepackage{mathrsfs}
+\usepackage{braket}
+\usepackage{systeme}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[overload]{empheq}
+\usepackage[top=2cm,bottom=3cm,left=3cm,right=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[shortlabels]{enumitem}
+\usepackage{subfiles}
+
+
+\newcommand{\sig}{$\sigma$-álgebra}
+\newcommand{\sige}{\sigma(\mathcal{E}}
+\newcommand{\muest}{\mu^*}
+\newcommand{\muzero}{\mu_0}
+
+
+\theoremstyle{plain}
+\newtheorem{definition}{Definição}
+\newtheorem{theorem}{Teorema}
+\newtheorem{lemma}[theorem]{Lema}
+\newtheorem{corollary}[theorem]{Corolário}
+\newtheorem{proposition}{Proposição}
+\newtheorem{obs}{Observação}
+\newtheorem{example}{Exemplo}
+
+
+\counterwithin*{equation}{section}
+\counterwithin*{equation}{subsection}
+
+
+\title{Teoria da medida}
+\author{Kaique M. M. Oliveira, 759540}
+\date{}
+
+\begin{document}
+    \maketitle
+    
+    \include{espacos_mensuraveis_copy}
+    \include{espacos_de_medida_copy}
+    \include{medida_de_borel_copy}   
+    
+
+
+    
+
+\end{document}
+

@@ -1415,6 +1415,10 @@ INPUT .\chapters\funcoes_mensuraveis.tex
 INPUT chapters\funcoes_mensuraveis.tex
 INPUT C:\Users\kaiqu\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvr8t.vf
 INPUT C:\Users\kaiqu\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8r.tfm
+INPUT .\chapters\integracao.tex
+INPUT chapters\integracao.tex
+INPUT .\chapters\integracao.tex
+INPUT chapters\integracao.tex
 INPUT monografia.aux
 INPUT .\monografia.out
 INPUT .\monografia.out
