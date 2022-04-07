@@ -1,10 +1,10 @@
 # Fdb version 3
-["makeindex monografia.idx"] 1648774991 "monografia.idx" "monografia.ind" "monografia" 1648829058
-  "monografia.idx" 1648829057 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex monografia.idx"] 1649285310 "monografia.idx" "monografia.ind" "monografia" 1649286699
+  "monografia.idx" 1649286697 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "monografia.ilg"
   "monografia.ind"
-["pdflatex"] 1648829056 "c:/Users/kaiqu/OneDrive/햞ea de Trabalho/TCC/TCCtex/monografia.tex" "monografia.pdf" "monografia" 1648829058
+["pdflatex"] 1649286697 "c:/Users/kaiqu/OneDrive/햞ea de Trabalho/TCC/TCCtex/monografia.tex" "monografia.pdf" "monografia" 1649286699
   "C:/Users/kaiqu/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1648306783 82863 fc06390459ad37febe7d55553c8cd620 ""
   "C:/Users/kaiqu/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1643599178 10243469 a795c6a5403cb804b73b1053516860f8 ""
   "C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -229,17 +229,17 @@
   "C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1623005690 4902 efb3d66683a2da2a232f71e3a571a899 ""
   "C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-abspage.sty" 1602241898 2275 d29aca6fd67823551cb07584e3681d5d ""
   "C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-base.sty" 1602241898 20688 beaddf14d96104d4bf016523be5395c5 ""
-  "c:/Users/kaiqu/OneDrive/햞ea de Trabalho/TCC/TCCtex/monografia.tex" 1648829053 14431 f51481d35d7e3f70fc7ba0f0e69f4ebe ""
+  "c:/Users/kaiqu/OneDrive/햞ea de Trabalho/TCC/TCCtex/monografia.tex" 1649171730 14439 997479d09862b74a08dd3f189dce2d50 ""
   "chapters/espacos_de_medida_copy.tex" 1648513032 11458 8e5742dd7c00ff4c932db815bf3f3bf5 ""
   "chapters/espacos_mensuraveis_copy.tex" 1648515006 9022 ac744bc394dcc9763ec322060f56d0e1 ""
-  "chapters/funcoes_mensuraveis.tex" 1648828756 9388 b9de156721bed81ce49fb91655f6a4e3 ""
-  "chapters/integracao.tex" 1648781065 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "chapters/funcoes_mensuraveis.tex" 1649197732 9403 180d7617be76bd5d70ce9c26c7bcb8c6 ""
+  "chapters/integracao.tex" 1649286696 3588 5ffa9eab38b70c6ded89e057dbb3c674 ""
   "chapters/medida_de_borel_copy.tex" 1648563732 19865 059aa93b672369ae2db1224b36be73d3 ""
   "dmtex.cls" 1637876701 20379 0160ec1feb42f567820358282222626f ""
-  "monografia.aux" 1648829058 3115 17f9c7153d97494ea1fc3d2e7c9720c5 "pdflatex"
-  "monografia.ind" 1648774991 0 d41d8cd98f00b204e9800998ecf8427e "makeindex monografia.idx"
-  "monografia.out" 1648829058 795 f8553c05e3128d05a816b24e662ed00e "pdflatex"
-  "monografia.tex" 1648829053 14431 f51481d35d7e3f70fc7ba0f0e69f4ebe ""
+  "monografia.aux" 1649286698 3338 42c4b3db07cc95d9cd3412423a8c46f9 "pdflatex"
+  "monografia.ind" 1649285311 0 d41d8cd98f00b204e9800998ecf8427e "makeindex monografia.idx"
+  "monografia.out" 1649286698 845 e19be6b1954c250d983b619ce3ba91ec "pdflatex"
+  "monografia.tex" 1649171730 14439 997479d09862b74a08dd3f189dce2d50 ""
   (generated)
   "monografia.aux"
   "monografia.idx"

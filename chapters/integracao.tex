@@ -1,0 +1,59 @@
+\begin{definicao}
+    Seja $(X, \mathcal{B}, \mu)$ um espaço de medida e seja $s: X \to \mathbb{R}_+ $ uma função simples representada como $s(x) = \sum_{j=1} ^n a_j \mathcal{X}_{E_j} (x)$. Se $A \in \mathcal{B}$, defina
+    \begin{equation} \label{intsimples}
+        \int _A s \,d\mu  = \sum _{j=1}^n a_j \mu{(A \cap E_j)}. 
+    \end{equation}
+
+    Acima $a_j = 0$ e  $\mu(E_j)=\infty$, por convenção, definiremos que $a_j \mu(E_j) = 0$. Se $f: X \to \mathbb{R}_+$ for uma função mensurável qualquer, defina
+    \begin{equation} \label{intpositiva}
+        \int _ A f \, d\mu = \sup \bigg\{ \int_A s \, d \mu : 0 \leq s \leq f, \ s \ \text{é simples} \bigg\}. 
+    \end{equation}
+    E se $f: X \to \mathbb{R}$ for uma função mensurável qualquer, a integral de Lebesgue de $f$ em respeito a medida $\mu$ e sobre o conjunto $A$ é definida como 
+    \begin{equation} \label{intqualquer}
+        \int_A f \, d\mu = \int_A f^+ \, d\mu  - \int_A f^- \, d\mu.
+    \end{equation}
+\end{definicao}
+A partir de agora, partiremos a nos referir a integral de Lebesgue apenas como integral. Quando estivermos integrando sobre o próprio espaço $X$, utilizaremos a notação $\int f\, d\mu$, ou simplesmente $\int f$ se a medida $\mu$ for explicitamente definida.
+
+\begin{definicao}
+    Uma função $f$ dita integrável se $f$ é mensurável e $\int |f| \, d \mu < \infty$.
+\end{definicao}
+
+\begin{proposicao}
+    Sejam $s,t: X \to \mathbb{R}_+$ simples e $\alpha \in \mathbb{R}_+$. 
+    \begin{enumerate}[label=(\roman*)]
+        \item  $\int \alpha s  =  \alpha \int s$.
+        \item  $\int (s + t)  =  \int s + \int t$.
+        \item  Se $s \leq t$, então $\int s \leq \int t$.
+        \item Para todo $A \in \mathcal{B}$, a função $\nu(A) = \int_A s$ é uma medida em $\mathcal{B}$. 
+    \end{enumerate}
+    \begin{proof}
+        \begin{enumerate}[label=(\roman*)]
+            \item 
+            $\int \alpha s = \sum _{j=1}^n \alpha a_j \mu{(E_j)} = \alpha \sum _{j=1}^n  a_j \mu{(E_j)} = \alpha \int  s $ 
+            
+            \item Seja $s = \sum _{j=1}^n a_j \mathcal{X}(E_j)$ e $t = \sum _{k=1}^m b_k \mathcal{X}(F_k)$. Sem perda de generalidade, assuma que $E_1,...,E_n$ sejam disjuntos e $F_1, ..., F_k$ também. Como $\bigcup_{j=1} ^n E_j = X = \bigcup_{k=1} ^m F_k $ então nós temos que $E_j = \bigcup_{k=1} ^m(E_j \cap F_k)$ e $F_k = \bigcup_{j=1} ^n(E_j \cap F_k)$ e portanto nós temos que 
+            \[ s + t = \sum _{j=1}^n \sum _{k=1}^m (a_j + b_k) \mathcal{X}_{E_j \cap F_k} \] 
+            e segue imediatamente que
+            \begin{align*}
+                \int (s+t) & = \sum _{j=1}^n \sum _{k=1}^m (a_j + b_k) \mu(E_j \cap F_k) \\
+                & = \sum _{j=1}^n \sum _{k=1}^m a_j \mu(E_j \cap F_k) + \sum _{j=1}^n \sum _{k=1}^m b_k \mu(E_j \cap F_k) \\
+                & = \sum _{j=1}^n a_j \mu(E_j ) +
+                \sum _{k=1}^m a_j \mu(F_k)  \\
+                & = \int s + \int t.
+            \end{align*}
+
+            \item Se $s \leq t$, então 
+            \[
+                \sum _{j=1}^n \sum _{k=1}^m a_j \mathcal{X}_{E_j \cap F_k} \leq \sum _{j=1}^n \sum _{k=1}^m b_k \mathcal{X}_{E_j \cap F_k}.   
+            \]
+            E então $a_j \leq b_k$ quando $E_j \cap F_k \neq \emptyset$. O que implica que 
+            \[
+            \int s \leq \int t.    
+            \]
+            
+            \item Dado $A \in \mathcal{B}$ nós temos $ \nu(A) = \int_A d \mu = \int \mathcal{X}_A d \mu = \mu(A)$.
+            
+        \end{enumerate} 
+    \end{proof}
+\end{proposicao}

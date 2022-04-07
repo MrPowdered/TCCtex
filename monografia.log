@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.1.31)  1 APR 2022 13:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.1.31)  6 APR 2022 20:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1140,24 +1140,24 @@ LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 
 ] [16] [17]) [18]
  5.
-(chapters/integracao.tex) [19
+(chapters/integracao.tex [19
 
-] (monografia.aux)
+]) [20] (monografia.aux)
 Package rerunfilecheck Info: File `monografia.out' has not changed.
-(rerunfilecheck)             Checksum: F8553C05E3128D05A816B24E662ED00E;795.
+(rerunfilecheck)             Checksum: E19BE6B1954C250D983B619CE3BA91EC;845.
  ) 
 Here is how much of TeX's memory you used:
- 29876 strings out of 478593
- 550291 string characters out of 2844604
- 869856 words of memory out of 3000000
- 46891 multiletter control sequences out of 15000+600000
+ 29895 strings out of 478593
+ 550482 string characters out of 2844604
+ 869985 words of memory out of 3000000
+ 46895 multiletter control sequences out of 15000+600000
  537099 words of font info for 385 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  124i,16n,132p,1136b,707s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/kaiqu/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on monografia.pdf (19 pages, 214847 bytes).
+Output written on monografia.pdf (20 pages, 222199 bytes).
 PDF statistics:
- 297 PDF objects out of 1000 (max. 8388607)
- 113 named destinations out of 1000 (max. 500000)
+ 318 PDF objects out of 1000 (max. 8388607)
+ 128 named destinations out of 1000 (max. 500000)
  63549 words of extra memory for PDF output out of 74296 (max. 10000000)
 
